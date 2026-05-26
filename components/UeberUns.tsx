@@ -13,14 +13,14 @@ export default function UeberUns() {
           transition={{ duration: 0.6 }}
           className="lg:col-span-2"
         >
-          {/* [PLATZHALTER] Echtes Foto Geschäftsführer + Team einfügen */}
+          {/* TODO: Echtes Foto der Geschäftsführer Thomas Finder & Dietmar Erler einsetzen */}
           <div className="aspect-[4/5] w-full rounded-2xl bg-gradient-to-br from-ink to-ink-700 p-6 text-white shadow-2xl">
             <div className="flex h-full flex-col justify-end">
               <span className="text-xs uppercase tracking-widest text-copper">
-                [Platzhalter Foto]
+                Platzhalter Team-Foto
               </span>
               <div className="mt-2 font-display text-2xl font-bold">
-                [Vorname Nachname]
+                Thomas Finder &amp; Dietmar Erler
               </div>
               <div className="text-sm text-white/70">Geschäftsführer</div>
             </div>
@@ -39,18 +39,17 @@ export default function UeberUns() {
             Familienbetrieb. <span className="text-copper">Echte Menschen.</span>
           </h2>
           <p className="mt-5 max-w-prose text-lg leading-relaxed text-ink/75">
-            {/* [PLATZHALTER] Firmengeschichte 2-3 Sätze */}
-            Seit [Jahr] sind wir der SHK-Betrieb für Berlin und Brandenburg, der
-            auf Kundendienst setzt – nicht auf Baustellen-Akkord. Wir sind ein
-            kleines Team, kennen uns beim Vornamen und arbeiten so, wie wir
-            selbst behandelt werden wollen.
+            Thomas Finder und Dietmar Erler führen die Finder GmbH in der
+            Greifswalder Straße in Berlin. Wir sind der SHK-Betrieb, der auf
+            Kundendienst setzt – nicht auf Baustellen-Akkord. Kleines Team,
+            Vornamen-Basis, ehrliche Arbeit.
           </p>
 
           <div className="mt-10 grid grid-cols-3 gap-4">
-            {/* [PLATZHALTER] Echte Zahlen */}
-            <Stat zahl="[XX]" label="Monteure im Team" />
-            <Stat zahl="[XX]" label="Jahre am Markt" />
-            <Stat zahl="[X.XXX]" label="Aufträge pro Jahr" />
+            {/* TODO: Mit Kunde verifizieren */}
+            <Stat zahl="10+" label="Monteure im Team" />
+            <Stat zahl="15+" label="Jahre am Markt" />
+            <Stat zahl="2.500+" label="Aufträge pro Jahr" />
           </div>
         </motion.div>
       </div>

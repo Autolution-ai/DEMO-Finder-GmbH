@@ -33,13 +33,12 @@ export default function FinalCTA() {
             </a>
           </div>
 
-          {/* [PLATZHALTER] Echte Telefonnummer */}
           <a
-            href="tel:+4930000000"
+            href="tel:+493070073555"
             className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-ink/80 hover:text-ink"
           >
             <Phone size={16} />
-            Lieber telefonieren? [030 / 000 0000] · Mo–Fr 8–17 Uhr
+            Lieber telefonieren? 030 70073555 · Mo–Fr 8–14 Uhr
           </a>
         </motion.div>
       </div>

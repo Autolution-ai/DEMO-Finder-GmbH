@@ -26,8 +26,7 @@ export default function Nav() {
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-ink text-copper">
             <Wrench size={18} strokeWidth={2.5} />
           </span>
-          {/* [PLATZHALTER] Firmenname */}
-          <span>[Firmenname]</span>
+          <span>Finder GmbH</span>
         </a>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-ink/80 md:flex">

@@ -7,20 +7,22 @@ export default function JsonLd() {
     '@graph': [
       {
         '@type': 'LocalBusiness',
-        '@id': 'https://[firmenname].de/#org',
-        name: '[Firmenname]',
+        '@id': 'https://karriere.finder-gmbh.info/#org',
+        name: 'Finder GmbH',
         description:
           'SHK-Betrieb für Sanitär, Heizung und Klimatechnik in Berlin und Brandenburg. Kundendienst, Wartung, Service.',
-        url: 'https://[firmenname].de',
-        telephone: '+49-30-0000000',
+        url: 'https://karriere.finder-gmbh.info',
+        telephone: '+49-30-70073555',
+        email: 'info@finder-gmbh.info',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: '[Straße Hausnummer]',
-          addressLocality: '[Ort]',
-          postalCode: '[PLZ]',
+          streetAddress: 'Greifswalder Str. 23',
+          addressLocality: 'Berlin',
+          postalCode: '10405',
           addressRegion: 'BE',
           addressCountry: 'DE',
         },
+        openingHours: 'Mo-Fr 08:00-14:00',
         areaServed: ['Berlin', 'Brandenburg'],
       },
       {
@@ -30,7 +32,7 @@ export default function JsonLd() {
           'Anlagenmechaniker SHK im Kundendienst – nicht auf der Baustelle. Übertariflich, eigener Firmenwagen, betriebliche Altersvorsorge, planbare Arbeitszeiten.',
         datePosted: new Date().toISOString().split('T')[0],
         employmentType: 'FULL_TIME',
-        hiringOrganization: { '@id': 'https://[firmenname].de/#org' },
+        hiringOrganization: { '@id': 'https://karriere.finder-gmbh.info/#org' },
         jobLocation: {
           '@type': 'Place',
           address: {

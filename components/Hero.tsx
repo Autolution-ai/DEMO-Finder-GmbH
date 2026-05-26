@@ -45,13 +45,12 @@ export default function Hero() {
           <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm text-white/70">
             <div className="flex items-center gap-2">
               <Star size={16} className="fill-copper text-copper" />
-              {/* [PLATZHALTER] Google-Bewertung */}
-              <span>4,9 Google · [XX] Bewertungen</span>
+              {/* TODO: Echte Google-Bewertungszahl einsetzen, sobald vom Kunden bestätigt */}
+              <span>Familienbetrieb · Berlin Prenzlauer Berg</span>
             </div>
             <div className="flex items-center gap-2">
               <Truck size={16} className="text-copper" />
-              {/* [PLATZHALTER] Firmenwagen-Modell */}
-              <span>Eigener Firmenwagen (VW Caddy o. ä.)</span>
+              <span>Eigener Firmenwagen inklusive</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock size={16} className="text-copper" />

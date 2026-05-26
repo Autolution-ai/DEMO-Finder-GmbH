@@ -288,10 +288,10 @@ function Absage() {
         <a href="#" className="text-copper underline">Ausbildungsstelle</a>?
       </p>
       <a
-        href="tel:+4930000000"
+        href="tel:+493070073555"
         className="btn-ghost mt-6 inline-flex"
       >
-        <Phone size={16} /> Trotzdem anrufen
+        <Phone size={16} /> Trotzdem anrufen: 030 70073555
       </a>
     </div>
   );

@@ -7,7 +7,7 @@ const punkte = [
   'Ausbildung als Anlagenmechaniker SHK oder vergleichbar',
   'Führerschein Klasse B',
   'Deutsch B2 oder gutes Englisch',
-  'Bock auf Kunden – kein Baustellen-Mindset',
+  'Bock auf Kunden, kein Baustellen-Mindset',
 ];
 
 export default function Anforderungen() {

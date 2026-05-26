@@ -42,7 +42,7 @@ const benefits = [
     titel: 'Altersvorsorge',
     // [PLATZHALTER] BAV-Betrag
     zahl: '+150 €',
-    text: 'Betriebliche Altersvorsorge – wir zahlen drauf, jeden Monat.',
+    text: 'Betriebliche Altersvorsorge. Wir zahlen drauf, jeden Monat.',
   },
   {
     icon: Shirt,

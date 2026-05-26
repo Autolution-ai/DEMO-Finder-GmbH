@@ -41,7 +41,7 @@ export default function UeberUns() {
           <p className="mt-5 max-w-prose text-lg leading-relaxed text-ink/75">
             Thomas Finder und Dietmar Erler führen die Finder GmbH in der
             Greifswalder Straße in Berlin. Wir sind der SHK-Betrieb, der auf
-            Kundendienst setzt – nicht auf Baustellen-Akkord. Kleines Team,
+            Kundendienst setzt. Nicht auf Baustellen-Akkord. Kleines Team,
             Vornamen-Basis, ehrliche Arbeit.
           </p>
 

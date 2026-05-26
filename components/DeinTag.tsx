@@ -6,9 +6,9 @@ import { Sunrise, Coffee, Wrench, Soup, ClipboardCheck, Home } from 'lucide-reac
 const steps = [
   { zeit: '07:00', icon: Sunrise, titel: 'Firmenwagen', text: 'Du steigst in deinen Caddy. Tour ist im Tablet, Werkzeug an Bord.' },
   { zeit: '08:00', icon: Coffee, titel: 'Erster Kunde', text: 'Heizung checkt nicht. Du klingelst, redest, löst. Sauber, freundlich.' },
-  { zeit: '12:00', icon: Soup, titel: 'Mittag', text: 'Eine Stunde Pause. Wo du willst – nicht in der Werkstatt-Kantine.' },
+  { zeit: '12:00', icon: Soup, titel: 'Mittag', text: 'Eine Stunde Pause. Wo du willst, nicht in der Werkstatt-Kantine.' },
   { zeit: '14:00', icon: Wrench, titel: 'Wartung', text: 'Brennwert-Therme jährlich durchchecken. Routine, kein Druck.' },
-  { zeit: '16:30', icon: ClipboardCheck, titel: 'Bericht & Rückgabe', text: 'Kurz dokumentieren, Werkstatt – Auto bleibt bei dir, wenn du willst.' },
+  { zeit: '16:30', icon: ClipboardCheck, titel: 'Bericht & Rückgabe', text: 'Kurz dokumentieren, Werkstatt. Auto bleibt bei dir, wenn du willst.' },
   { zeit: '17:00', icon: Home, titel: 'Feierabend', text: 'Pünktlich. Wirklich. Ohne „nur noch schnell".' },
 ];
 

@@ -13,7 +13,7 @@ const punkte = [
   },
   {
     titel: 'Der Kumpel verdient mehr.',
-    text: 'Gleiche Ausbildung, gleiche Jahre – nur ein anderer Betrieb.',
+    text: 'Gleiche Ausbildung, gleiche Jahre. Nur ein anderer Betrieb.',
   },
   {
     titel: 'Chef kennt deinen Namen nicht.',

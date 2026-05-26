@@ -20,7 +20,7 @@ const items = [
   },
   {
     q: 'Wie sind die Arbeitszeiten wirklich?',
-    a: 'Montag bis Freitag, 7 bis 17 Uhr. Notdienst nur freiwillig und extra bezahlt. Wochenenden sind frei – versprochen.',
+    a: 'Montag bis Freitag, 7 bis 17 Uhr. Notdienst nur freiwillig und extra bezahlt. Wochenenden sind frei. Versprochen.',
   },
   {
     q: 'Was passiert wenn ich Quereinsteiger bin?',

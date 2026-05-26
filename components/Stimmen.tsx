@@ -15,7 +15,7 @@ const stimmen = [
     name: '[Vorname Nachname]',
     rolle: 'Anlagenmechaniker',
     jahre: 'seit 2 Jahren dabei',
-    text: 'Lohn ist ehrlich gesagt 600 Euro mehr als vorher. Werkzeug ist neu. Chef ruft mich an, wenn was ist – nicht andersrum.',
+    text: 'Lohn ist ehrlich gesagt 600 Euro mehr als vorher. Werkzeug ist neu. Chef ruft mich an, wenn was ist. Nicht andersrum.',
   },
   {
     name: '[Vorname Nachname]',

@@ -24,13 +24,14 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-6 font-display text-5xl font-bold leading-[1.05] sm:text-6xl md:text-7xl">
+            <span className="sr-only">Anlagenmechaniker SHK Berlin: </span>
             Kundendienst{' '}
             <span className="text-copper">statt Baustelle.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg text-white/80 sm:text-xl">
             Übertariflich. Eigener Firmenwagen. Antwort in 24 Stunden.
-            Bewerbung in 3 Minuten – ohne Anschreiben, ohne PDF.
+            Bewerbung in 3 Minuten. Ohne Anschreiben, ohne PDF.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">

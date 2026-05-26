@@ -29,7 +29,7 @@ export default function JsonLd() {
         '@type': 'JobPosting',
         title: 'Anlagenmechaniker SHK (m/w/d) – Kundendienst',
         description:
-          'Anlagenmechaniker SHK im Kundendienst – nicht auf der Baustelle. Übertariflich, eigener Firmenwagen, betriebliche Altersvorsorge, planbare Arbeitszeiten.',
+          'Anlagenmechaniker SHK im Kundendienst, nicht auf der Baustelle. Übertariflich, eigener Firmenwagen, betriebliche Altersvorsorge, planbare Arbeitszeiten.',
         datePosted: new Date().toISOString().split('T')[0],
         employmentType: 'FULL_TIME',
         hiringOrganization: { '@id': 'https://karriere.finder-gmbh.info/#org' },

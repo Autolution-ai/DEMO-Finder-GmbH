@@ -154,6 +154,8 @@ export default function Funnel() {
                       <div className="space-y-4">
                         <input
                           type="text"
+                          aria-label="Vor- und Nachname"
+                          autoComplete="name"
                           placeholder="Dein Vor- und Nachname"
                           value={a.name ?? ''}
                           onChange={(e) => setA({ ...a, name: e.target.value })}
@@ -162,6 +164,8 @@ export default function Funnel() {
                         <input
                           type="tel"
                           inputMode="tel"
+                          aria-label="Handynummer"
+                          autoComplete="tel"
                           placeholder="Handynummer"
                           value={a.telefon ?? ''}
                           onChange={(e) => setA({ ...a, telefon: e.target.value })}
@@ -270,7 +274,7 @@ function Erfolg({ name }: { name?: string }) {
         Danke{name ? `, ${name.split(' ')[0]}` : ''}.
       </h3>
       <p className="mt-3 text-ink/75">
-        Du hörst innerhalb von 24 Stunden von uns – persönlich, nicht per
+        Du hörst innerhalb von 24 Stunden von uns. Persönlich, nicht per
         Massenmail.
       </p>
     </div>

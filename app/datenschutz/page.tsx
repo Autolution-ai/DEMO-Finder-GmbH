@@ -1,4 +1,4 @@
-import Nav from '@/components/Nav';
+import NavBrand from '@/components/landing/NavBrand';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function DatenschutzPage() {
   return (
     <>
-      <Nav />
+      <NavBrand />
       <main className="bg-white pt-32 pb-24">
         <article className="container-tight max-w-3xl">
           <h1 className="text-4xl font-bold sm:text-5xl">Datenschutzerklärung</h1>

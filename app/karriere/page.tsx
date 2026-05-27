@@ -1,26 +1,23 @@
+import type { Metadata } from 'next';
 import NavBrand from '@/components/landing/NavBrand';
-import Hero from '@/components/Hero';
+import KarriereHero from '@/components/karriere/KarriereHero';
+import KarriereTrust from '@/components/karriere/KarriereTrust';
 import AktuelleStellen from '@/components/karriere/AktuelleStellen';
-import SchmerzSection from '@/components/SchmerzSection';
-import Benefits from '@/components/Benefits';
-import DeinTag from '@/components/DeinTag';
-import ScrollStory from '@/components/ScrollStory';
-import UeberUns from '@/components/UeberUns';
-import Stimmen from '@/components/Stimmen';
-import Anforderungen from '@/components/Anforderungen';
-import Funnel from '@/components/Funnel';
-import FAQ from '@/components/FAQ';
-import FinalCTA from '@/components/FinalCTA';
+import WarumFinder from '@/components/karriere/WarumFinder';
+import DeinTagEditorial from '@/components/karriere/DeinTagEditorial';
+import MonteurStimmen from '@/components/karriere/MonteurStimmen';
+import AnforderungenNew from '@/components/karriere/AnforderungenNew';
+import FunnelNew from '@/components/karriere/FunnelNew';
+import FAQBewerber from '@/components/karriere/FAQBewerber';
+import FinalCTANew from '@/components/karriere/FinalCTANew';
 import Footer from '@/components/Footer';
-import StickyMobileCTA from '@/components/StickyMobileCTA';
 import JsonLd from '@/components/JsonLd';
 import KarriereJsonLd from '@/components/karriere/KarriereJsonLd';
-import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Karriere Anlagenmechaniker SHK Berlin | Finder GmbH',
   description:
-    'Kundendienst statt Baustelle. Eigener Firmenwagen, übertariflich, Antwort in 24h. Bewirb dich in 3 Minuten bei Finder GmbH in Berlin Prenzlauer Berg.',
+    'Kundendienst statt Baustelle. Eigener Firmenwagen, bis 4.600 € brutto, Antwort in 24h. Bewirb dich in 3 Minuten bei Finder GmbH in Berlin Prenzlauer Berg.',
 };
 
 export default function KarrierePage() {
@@ -29,22 +26,19 @@ export default function KarrierePage() {
       <JsonLd />
       <KarriereJsonLd />
       <NavBrand />
-      <main>
-        <Hero />
+      <main className="bg-cream">
+        <KarriereHero />
+        <KarriereTrust />
         <AktuelleStellen />
-        <SchmerzSection />
-        <Benefits />
-        <DeinTag />
-        <ScrollStory />
-        <UeberUns />
-        <Stimmen />
-        <Anforderungen />
-        <Funnel />
-        <FAQ />
-        <FinalCTA />
+        <WarumFinder />
+        <DeinTagEditorial />
+        <MonteurStimmen />
+        <AnforderungenNew />
+        <FunnelNew />
+        <FAQBewerber />
+        <FinalCTANew />
       </main>
       <Footer />
-      <StickyMobileCTA />
     </>
   );
 }

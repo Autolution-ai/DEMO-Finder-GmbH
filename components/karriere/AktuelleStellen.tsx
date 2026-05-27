@@ -3,8 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, MapPin, Clock, Wrench, GraduationCap, ShieldCheck } from 'lucide-react';
 
-// TODO: Diese Stellen mit dem Kunden / dem aktuellen JOIN-Profil verifizieren:
-// https://join.com/companies/finderjobs
+// TODO: mit aktuellem JOIN-Profil verifizieren: https://join.com/companies/finderjobs
 const stellen = [
   {
     id: 'anlagenmechaniker-kundendienst',
@@ -12,13 +11,15 @@ const stellen = [
     titel: 'Anlagenmechaniker SHK Kundendienst (m/w/d)',
     typ: 'Vollzeit · Festanstellung',
     ort: 'Berlin Prenzlauer Berg',
+    gehalt: 'bis 4.600 € brutto',
     kurz: 'Du fährst von Kunde zu Kunde, wartest Heizungen, behebst Störungen, baust Therme oder Wärmepumpe ein. Kein Akkord, kein Rohbau.',
     punkte: [
       'Ausbildung als Anlagenmechaniker SHK oder vergleichbar',
       'Führerschein Klasse B',
-      'Berufserfahrung im Kundendienst von Vorteil',
+      'Erfahrung im Kundendienst von Vorteil',
     ],
-    badge: 'Sofort verfügbar',
+    badge: 'Sofort',
+    badgeColor: 'bg-copper text-coal',
   },
   {
     id: 'servicetechniker',
@@ -26,6 +27,7 @@ const stellen = [
     titel: 'Servicetechniker Heizung & Sanitär (m/w/d)',
     typ: 'Vollzeit · Festanstellung',
     ort: 'Berlin & Brandenburg',
+    gehalt: 'bis 4.400 € brutto',
     kurz: 'Schwerpunkt Wartung und Inspektion. Brennwerttherme, Wärmepumpe, Gas, Öl. Mit Protokoll, Diagnose, Beratung beim Kunden.',
     punkte: [
       'Erfahrung in Wartung von Heizungsanlagen',
@@ -33,6 +35,7 @@ const stellen = [
       'Gepflegtes Auftreten im Kundenkontakt',
     ],
     badge: 'Offen',
+    badgeColor: 'bg-white/10 text-white',
   },
   {
     id: 'ausbildung-anlagenmechaniker',
@@ -40,107 +43,126 @@ const stellen = [
     titel: 'Ausbildung Anlagenmechaniker:in SHK (m/w/d)',
     typ: '3,5 Jahre · Start jährlich im August',
     ort: 'Berlin Prenzlauer Berg',
+    gehalt: 'bis 1.200 € im 3. Jahr',
     kurz: 'Du lernst alles. Heizungsbau, Sanitärinstallation, Wartung, Kundendienst. Mit echten Aufgaben ab Woche eins, nicht nur Werkzeug halten.',
     punkte: [
       'Guter Hauptschulabschluss oder besser',
       'Bock auf Handwerk, Lust auf Verantwortung',
       'Pünktlich, zuverlässig, teamfähig',
     ],
-    badge: 'Ausbildungsplatz 2026',
+    badge: 'Start 2026',
+    badgeColor: 'bg-white/10 text-white',
   },
 ];
 
 export default function AktuelleStellen() {
   return (
-    <section id="stellen" className="bg-white py-24 sm:py-32">
-      <div className="container-tight">
-        <div className="grid items-end gap-8 lg:grid-cols-3 lg:gap-12">
-          <div className="lg:col-span-2">
-            <span className="eyebrow">Aktuelle Stellen</span>
-            <h2 className="editorial-h2 mt-4 text-ink">
+    <section id="stellen" className="bg-anthra py-24 text-white sm:py-32">
+      <div className="container-wide">
+        <div className="grid items-end gap-y-10 lg:grid-cols-12 lg:gap-12">
+          <div className="lg:col-span-7">
+            <span className="eyebrow-light">Aktuelle Stellen</span>
+            <h2 className="editorial-h2 mt-5 text-white">
               Drei Wege,
               <br />
-              <span className="text-copper">Teil von Finder zu werden.</span>
+              Teil von <span className="text-copper">Finder</span> zu werden.
             </h2>
           </div>
-          <p className="max-w-md text-lg leading-relaxed text-ink/70">
-            Wenn deine Rolle nicht dabei ist und du trotzdem passt: schreib uns
-            trotzdem. Wir wachsen und stellen ein, wenn die Person stimmt.
-          </p>
+          <div className="lg:col-span-5">
+            <p className="text-lg leading-relaxed text-white/70">
+              Keine Rolle dabei und du passt trotzdem? Schreib uns. Wir wachsen
+              und stellen ein, wenn die Person stimmt.
+            </p>
+          </div>
         </div>
 
-        <div className="mt-14 space-y-5">
+        <div className="mt-16 grid gap-5">
           {stellen.map((s, i) => {
             const Icon = s.icon;
             return (
               <motion.article
                 key={s.id}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-60px' }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group relative grid gap-6 rounded-2xl border border-ink/10 bg-cream-100 p-6 transition hover:border-copper/40 hover:bg-cream sm:p-8 lg:grid-cols-12 lg:items-start lg:gap-10"
+                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-coal transition hover:border-copper/40"
               >
-                {/* Icon + Badge */}
-                <div className="lg:col-span-2">
-                  <div className="grid h-14 w-14 place-items-center rounded-xl bg-ink text-copper">
-                    <Icon size={26} strokeWidth={2.1} />
-                  </div>
-                  <span className="mt-4 inline-block rounded-full bg-copper px-3 py-1 text-[11px] font-semibold uppercase tracking-widest text-white">
-                    {s.badge}
-                  </span>
-                </div>
-
-                {/* Inhalt */}
-                <div className="lg:col-span-7">
-                  <h3 className="font-display text-2xl font-bold leading-tight text-ink sm:text-3xl">
-                    {s.titel}
-                  </h3>
-                  <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-ink/60">
-                    <span className="inline-flex items-center gap-1.5">
-                      <Clock size={14} /> {s.typ}
-                    </span>
-                    <span className="inline-flex items-center gap-1.5">
-                      <MapPin size={14} /> {s.ort}
+                <div className="grid gap-8 p-7 sm:p-10 lg:grid-cols-12 lg:items-center">
+                  {/* Icon + Badge */}
+                  <div className="lg:col-span-2">
+                    <div className="grid h-16 w-16 place-items-center rounded-2xl bg-white/[0.04] text-copper transition group-hover:bg-copper group-hover:text-coal group-hover:rotate-[-6deg]">
+                      <Icon size={28} strokeWidth={2.1} />
+                    </div>
+                    <span
+                      className={`mt-5 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[10px] font-semibold uppercase tracking-widest ${s.badgeColor}`}
+                    >
+                      {s.badge}
                     </span>
                   </div>
-                  <p className="mt-4 text-base leading-relaxed text-ink/75">{s.kurz}</p>
 
-                  <ul className="mt-5 grid gap-1.5 text-sm text-ink/70">
-                    {s.punkte.map((p) => (
-                      <li key={p} className="flex items-start gap-2">
-                        <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-copper" />
-                        <span>{p}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  {/* Inhalt */}
+                  <div className="lg:col-span-7">
+                    <h3 className="font-display text-2xl font-bold leading-tight text-white sm:text-3xl">
+                      {s.titel}
+                    </h3>
+                    <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-white/60">
+                      <span className="inline-flex items-center gap-1.5">
+                        <Clock size={14} /> {s.typ}
+                      </span>
+                      <span className="inline-flex items-center gap-1.5">
+                        <MapPin size={14} /> {s.ort}
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 text-copper">
+                        {s.gehalt}
+                      </span>
+                    </div>
+                    <p className="mt-5 text-base leading-relaxed text-white/75">
+                      {s.kurz}
+                    </p>
+
+                    <ul className="mt-5 grid gap-2 text-sm text-white/65 sm:grid-cols-2">
+                      {s.punkte.map((p) => (
+                        <li key={p} className="flex items-start gap-2">
+                          <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-copper" />
+                          <span>{p}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* CTA */}
+                  <div className="lg:col-span-3 lg:text-right">
+                    <a
+                      href="#bewerben"
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-copper px-6 py-4 font-semibold text-white shadow-md shadow-copper/30 transition hover:bg-copper-600 lg:w-auto"
+                    >
+                      Bewerben
+                      <ArrowRight size={18} className="transition group-hover:translate-x-1" />
+                    </a>
+                    <a
+                      href="https://join.com/companies/finderjobs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 inline-block text-xs uppercase tracking-widest text-white/40 hover:text-white"
+                    >
+                      Details auf JOIN.com →
+                    </a>
+                  </div>
                 </div>
 
-                {/* CTA */}
-                <div className="lg:col-span-3 lg:text-right">
-                  <a
-                    href="#bewerben"
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-ink px-6 py-4 font-semibold text-white transition hover:bg-copper lg:w-auto"
-                  >
-                    Auf diese Stelle bewerben
-                    <ArrowRight size={18} className="transition group-hover:translate-x-1" />
-                  </a>
-                  <a
-                    href="https://join.com/companies/finderjobs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-3 inline-block text-xs uppercase tracking-widest text-ink/40 hover:text-ink"
-                  >
-                    Details auf JOIN.com →
-                  </a>
-                </div>
+                {/* Dekorative Hover-Linie */}
+                <span
+                  aria-hidden
+                  className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-copper transition-transform duration-500 group-hover:scale-x-100"
+                />
               </motion.article>
             );
           })}
         </div>
 
-        <p className="mt-10 text-center text-sm text-ink/50">
-          Hinweis: Verbindliche Stellenausschreibungen findest du auf{' '}
+        <p className="mt-10 text-center text-xs uppercase tracking-widest text-white/40">
+          Verbindliche Stellen auf{' '}
           <a
             href="https://join.com/companies/finderjobs"
             target="_blank"
@@ -149,7 +171,6 @@ export default function AktuelleStellen() {
           >
             join.com/companies/finderjobs
           </a>
-          . Bei Abweichungen zählt der dort hinterlegte Stand.
         </p>
       </div>
     </section>

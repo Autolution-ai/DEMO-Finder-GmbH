@@ -169,12 +169,6 @@ export default function HeroCinematic() {
                   >
                     <Phone size={16} /> 030 70073555
                   </a>
-                  <a
-                    href="/karriere"
-                    className="ml-auto hidden text-sm text-white/70 underline-offset-4 hover:text-white hover:underline sm:inline-block"
-                  >
-                    Bist du Anlagenmechaniker? →
-                  </a>
                 </div>
               </div>
             </div>

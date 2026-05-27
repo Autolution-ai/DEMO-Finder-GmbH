@@ -1,110 +1,244 @@
 'use client';
 
+import { useRef, useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { useGSAP } from '@gsap/react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ArrowUpRight, Flame, Bath, Droplets, Wrench, Siren, Wind } from 'lucide-react';
 import { IMG } from '@/lib/images';
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const services = [
   {
     nr: '01',
+    icon: Flame,
     titel: 'Heizung',
-    desc: 'Wärmepumpe, Fernwärme, Gas oder Öl. Beratung, Planung, Förderantrag bei BAFA und KfW. Reparatur und Wartung aller Systeme.',
+    sub: 'Wärmepumpe · Brennwert · Hybrid',
+    text: 'Wir beraten, planen und montieren neue Heizungen für Wohnhäuser, Mehrfamilienobjekte und Gewerbe. BAFA- und KfW-Förderanträge übernehmen wir komplett.',
     img: IMG.service.heizung,
   },
   {
     nr: '02',
-    titel: 'Bad­sanierung',
-    desc: 'Vom ersten Strich bis zur letzten Fuge. Eigenes Gewerk, keine fremden Subs.',
+    icon: Bath,
+    titel: 'Badsanierung',
+    sub: 'Komplett aus einer Hand',
+    text: 'Vom ersten Strich bis zur letzten Fuge. Eigene Gewerke, feste Partner für Fliesen und Elektrik. Standard-Bad in 3 bis 5 Wochen Bauzeit.',
     img: IMG.service.bad,
   },
   {
     nr: '03',
+    icon: Droplets,
     titel: 'Sanitär',
-    desc: 'Wasser, Abfluss, Armaturen. Installation, Tausch, Reparatur. Sauber, dicht, fertig.',
+    sub: 'Installation · Tausch · Reparatur',
+    text: 'Wasser, Abfluss, Armaturen. Vom tropfenden Hahn bis zur kompletten Steigleitungs-Sanierung. Sauber gearbeitet, am Ende durchgekehrt.',
     img: IMG.service.sanitaer,
   },
   {
     nr: '04',
+    icon: Wrench,
     titel: 'Wartung',
-    desc: 'Jährliche Heizungs-Inspektion. Mit Protokoll. Termin per WhatsApp möglich.',
+    sub: 'Jährlich · Mit Protokoll',
+    text: 'Heizungs-Inspektion und Wartung für Brennwert, Wärmepumpe, Gas und Öl. Mit schriftlichem Protokoll. Termin per Telefon oder WhatsApp.',
     img: IMG.service.wartung,
   },
   {
     nr: '05',
+    icon: Siren,
     titel: 'Notdienst',
-    desc: 'Wasserrohrbruch, Heizung kalt, Therme defekt. Werktags 8 bis 14 Uhr planbar erreichbar.',
+    sub: 'Werktags · Vor-Ort in 4 – 6 Stunden',
+    text: 'Wasserrohrbruch, Heizung ausgefallen, Therme defekt. Werktags 8 bis 14 Uhr persönlich am Telefon, Reaktion innerhalb von Stunden.',
     img: IMG.service.notdienst,
   },
   {
     nr: '06',
-    titel: 'Klima­technik',
-    desc: 'Split-Klima und Lüftung für Wohnen und Büro. Auch in Altbauten möglich.',
+    icon: Wind,
+    titel: 'Klima & Lüftung',
+    sub: 'Wohnen · Büro · Praxis',
+    text: 'Split-Klima und kontrollierte Lüftung für Wohnung, Büro und Praxis. Auch im Berliner Altbau möglich, mit dezenter Leitungsführung.',
     img: IMG.service.klima,
   },
 ];
 
 export default function Leistungen() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+
+  useGSAP(
+    () => {
+      const items = gsap.utils.toArray<HTMLElement>('[data-svc]');
+      items.forEach((el, i) => {
+        ScrollTrigger.create({
+          trigger: el,
+          start: 'top 60%',
+          end: 'bottom 40%',
+          onToggle: (self) => {
+            if (self.isActive) setActive(i);
+          },
+        });
+      });
+      return () => ScrollTrigger.getAll().forEach((t) => t.kill());
+    },
+    { scope: sectionRef }
+  );
+
   return (
-    <section id="leistungen" className="bg-cream py-24 sm:py-32">
+    <section
+      ref={sectionRef}
+      id="leistungen"
+      className="bg-cream py-24 sm:py-32"
+    >
       <div className="container-wide">
-        <div className="grid items-end gap-8 lg:grid-cols-3 lg:gap-16">
-          <div className="lg:col-span-2">
-            <span className="eyebrow">Was wir machen</span>
+        {/* Header asymmetrisch */}
+        <div className="grid items-end gap-y-10 lg:grid-cols-12 lg:gap-12">
+          <div className="lg:col-span-7">
+            <span className="eyebrow">Leistungen</span>
             <h2 className="editorial-h2 mt-5 text-coal">
-              Sanitär, Heizung,
+              Sechs Dinge,
               <br />
-              <span className="text-copper">alles aus einer Hand.</span>
+              die wir <span className="text-copper">richtig</span> machen.
             </h2>
           </div>
-          <p className="max-w-md text-lg leading-relaxed text-coal/70">
-            Wir bauen, reparieren und warten alles, was mit Wasser und Wärme zu
-            tun hat. In Berlin, Brandenburg und manchmal auch dazwischen.
-          </p>
+          <div className="lg:col-span-5">
+            <p className="text-lg leading-relaxed text-coal/70">
+              Heizung, Bad, Sanitär, Wartung, Notdienst, Klima. Alles aus einer
+              Hand, mit eigenem Team. Wir sagen Nein, wenn etwas nicht in unser
+              Können passt.
+            </p>
+          </div>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((s, i) => (
-            <motion.a
-              key={s.nr}
-              href="#kontakt"
-              initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-60px' }}
-              transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
-              className="group relative overflow-hidden rounded-2xl bg-coal"
-            >
-              <div className="relative aspect-[4/5] w-full overflow-hidden">
-                <Image
-                  src={s.img}
-                  alt={`${s.titel} – Finder GmbH Berlin`}
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover transition duration-700 group-hover:scale-[1.04]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-coal via-coal/30 to-transparent" />
-              </div>
-
-              <div className="absolute inset-x-0 bottom-0 p-7 text-white">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <div className="font-display text-xs uppercase tracking-widest text-copper">
-                      {s.nr}
+        {/* === Sticky Scroll Showcase === */}
+        <div className="mt-20 grid gap-10 lg:grid-cols-12 lg:gap-16">
+          {/* Linke Spalte: Sticky Bild (Desktop) */}
+          <div className="hidden lg:col-span-5 lg:block">
+            <div className="sticky top-28">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-coal shadow-2xl">
+                {services.map((s, i) => (
+                  <div
+                    key={s.nr}
+                    className="absolute inset-0 transition-opacity duration-700"
+                    style={{ opacity: active === i ? 1 : 0 }}
+                  >
+                    <Image
+                      src={s.img}
+                      alt={s.titel}
+                      fill
+                      sizes="40vw"
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-coal/70 via-coal/10 to-transparent" />
+                    <div className="absolute bottom-7 left-7 right-7 text-white">
+                      <div className="font-display text-xs uppercase tracking-[0.25em] text-copper">
+                        {s.nr} · {s.sub}
+                      </div>
+                      <div className="mt-2 font-display text-4xl font-bold">
+                        {s.titel}
+                      </div>
                     </div>
-                    <h3 className="mt-2 font-display text-2xl font-bold">
-                      {s.titel}
-                    </h3>
                   </div>
-                  <span className="grid h-10 w-10 flex-none place-items-center rounded-full bg-white/10 transition group-hover:bg-copper">
-                    <ArrowUpRight size={18} />
-                  </span>
+                ))}
+
+                {/* Progress-Indikator */}
+                <div className="absolute right-5 top-5 flex flex-col gap-1.5">
+                  {services.map((_, i) => (
+                    <span
+                      key={i}
+                      className={`block h-1.5 w-6 rounded-full transition ${
+                        active === i ? 'bg-copper' : 'bg-white/30'
+                      }`}
+                    />
+                  ))}
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-white/75">
-                  {s.desc}
-                </p>
               </div>
-            </motion.a>
-          ))}
+            </div>
+          </div>
+
+          {/* Rechte Spalte: Liste */}
+          <div className="lg:col-span-7">
+            <div className="space-y-6 lg:space-y-3">
+              {services.map((s, i) => {
+                const Icon = s.icon;
+                const isActive = active === i;
+                return (
+                  <a
+                    key={s.nr}
+                    data-svc
+                    href="#kontakt"
+                    className={`group relative block overflow-hidden rounded-2xl border transition-all duration-500 ${
+                      isActive
+                        ? 'border-copper/50 bg-white shadow-xl lg:scale-[1.01]'
+                        : 'border-coal/10 bg-cream-100 hover:border-coal/20'
+                    }`}
+                  >
+                    {/* Mobile Bild */}
+                    <div className="relative aspect-[16/9] overflow-hidden lg:hidden">
+                      <Image
+                        src={s.img}
+                        alt={s.titel}
+                        fill
+                        sizes="100vw"
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-coal/60 to-transparent" />
+                    </div>
+
+                    <div className="p-6 lg:p-7">
+                      <div className="flex items-start justify-between gap-5">
+                        <div className="flex items-start gap-5">
+                          <div
+                            className={`grid h-12 w-12 flex-none place-items-center rounded-xl transition ${
+                              isActive
+                                ? 'bg-copper text-coal'
+                                : 'bg-coal text-copper'
+                            }`}
+                          >
+                            <Icon size={22} strokeWidth={2.2} />
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-display text-xs uppercase tracking-[0.25em] text-copper">
+                              {s.nr} · {s.sub}
+                            </div>
+                            <h3 className="mt-1 font-display text-2xl font-bold leading-tight text-coal sm:text-3xl">
+                              {s.titel}
+                            </h3>
+                            <p className="mt-3 max-w-prose text-coal/70">
+                              {s.text}
+                            </p>
+                          </div>
+                        </div>
+                        <span
+                          className={`hidden h-10 w-10 flex-none place-items-center rounded-full transition lg:grid ${
+                            isActive
+                              ? 'bg-coal text-white'
+                              : 'bg-coal/5 text-coal/40 group-hover:bg-coal/10'
+                          }`}
+                        >
+                          <ArrowUpRight size={16} />
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+
+            {/* CTA Block am Ende */}
+            <div className="mt-10 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-coal/10 bg-coal p-7 text-white">
+              <div>
+                <div className="font-display text-lg font-semibold">
+                  Nichts dabei?
+                </div>
+                <div className="mt-1 text-sm text-white/70">
+                  Schreib uns, was du brauchst — wir sagen ehrlich, ob wir passen.
+                </div>
+              </div>
+              <a href="#kontakt" className="btn-primary !py-3 !px-5 text-sm">
+                Anfrage stellen
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

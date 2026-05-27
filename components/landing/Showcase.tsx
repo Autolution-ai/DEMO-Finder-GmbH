@@ -19,20 +19,26 @@ export default function Showcase() {
   return (
     <section id="projekte" className="bg-coal py-24 text-white sm:py-32">
       <div className="container-wide">
-        <div className="grid items-end gap-8 lg:grid-cols-3 lg:gap-16">
-          <div className="lg:col-span-2">
-            <span className="eyebrow-light">Vorher · Nachher</span>
-            <h2 className="editorial-h2 mt-5 text-white">
-              Vom dunklen Bad
-              <br />
-              <span className="text-copper">zum Lieblingsort.</span>
-            </h2>
-          </div>
-          <p className="max-w-md text-lg leading-relaxed text-white/70">
-            Ziehe den Slider und siehe, was bei einer Bad­sanierung in
-            Berlin Prenzlauer Berg passiert. Echte Projekt-Referenzen folgen
-            mit dem Foto-Shooting im Sommer.
+        {/* Editorial Header: groß, mittig, ohne klassische Zwei-Spalter-Optik */}
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="eyebrow-light">Projektreferenz · Bad­sanierung</span>
+          <h2 className="editorial-h2 mt-5 text-white">
+            Aus einem Bad von <span className="text-copper">1992</span>
+            <br />
+            wird ein Bad von <span className="text-copper">heute.</span>
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
+            Drei Wochen Bauzeit. Eigene Monteure. Ein Festpreis. Zieh den
+            Slider und sieh dir an, was bei einer typischen Berliner
+            Altbau-Sanierung passiert.
           </p>
+        </div>
+
+        {/* Mini-Stat-Bar */}
+        <div className="mx-auto mt-10 grid max-w-4xl grid-cols-3 divide-x divide-white/10 rounded-2xl border border-white/10 bg-white/[0.02] text-center">
+          <Stat value="3 Wochen" label="Bauzeit" />
+          <Stat value="1 Team" label="Eigene Monteure" />
+          <Stat value="Festpreis" label="Keine Nachträge" />
         </div>
 
         <motion.div
@@ -101,10 +107,24 @@ export default function Showcase() {
           </div>
 
           <p className="mt-5 text-center text-sm text-white/50">
-            Tipp: Slider per Maus oder Touch verschieben.
+            Slider per Maus oder Touch verschieben. Echte Kunden-Projekte folgen
+            mit dem Foto-Shooting im Sommer.
           </p>
         </motion.div>
       </div>
     </section>
+  );
+}
+
+function Stat({ value, label }: { value: string; label: string }) {
+  return (
+    <div className="px-4 py-5">
+      <div className="font-display text-xl font-bold text-copper sm:text-2xl">
+        {value}
+      </div>
+      <div className="mt-1 text-xs uppercase tracking-widest text-white/50">
+        {label}
+      </div>
+    </div>
   );
 }

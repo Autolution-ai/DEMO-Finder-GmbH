@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Phone, ClipboardList, FileText, Wrench, Clock } from 'lucide-react';
+import { Phone, ClipboardList, FileText, Wrench, Clock, ArrowRight } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -76,46 +76,45 @@ export default function Prozess() {
             transformOrigin: 'top',
             scrollTrigger: {
               trigger: sectionRef.current,
-              start: 'top 30%',
-              end: 'bottom 70%',
+              start: 'top 40%',
+              end: 'bottom 60%',
               scrub: 0.8,
             },
           }
         );
       }
 
-      // Fade-in pro Step
+      // Stagger Fade-In + Slide pro Step
       gsap.utils.toArray<HTMLElement>('[data-step]').forEach((el) => {
         gsap.fromTo(
           el,
-          { opacity: 0, y: 60 },
+          { opacity: 0, x: -40 },
           {
             opacity: 1,
-            y: 0,
+            x: 0,
             duration: 0.7,
             ease: 'power2.out',
             scrollTrigger: {
               trigger: el,
-              start: 'top 80%',
+              start: 'top 85%',
               toggleActions: 'play none none reverse',
             },
           }
         );
 
-        // Number-Counter Animation
-        const num = el.querySelector('[data-num]');
-        if (num) {
+        const dot = el.querySelector('[data-dot]');
+        if (dot) {
           gsap.fromTo(
-            num,
-            { scale: 0.6, opacity: 0 },
+            dot,
+            { scale: 0, opacity: 0 },
             {
               scale: 1,
               opacity: 1,
-              duration: 0.6,
-              ease: 'back.out(1.4)',
+              duration: 0.5,
+              ease: 'back.out(2)',
               scrollTrigger: {
                 trigger: el,
-                start: 'top 75%',
+                start: 'top 80%',
                 toggleActions: 'play none none reverse',
               },
             }
@@ -153,106 +152,83 @@ export default function Prozess() {
           </div>
         </div>
 
-        {/* === Timeline === */}
-        <div className="relative mt-20">
+        {/* === Vertikale Timeline (kein Zickzack mehr) === */}
+        <div className="relative mt-20 mx-auto max-w-4xl">
           {/* Statische Hintergrund-Linie */}
           <div
             aria-hidden
-            className="absolute left-[27px] top-0 hidden h-full w-px bg-coal/10 sm:block lg:left-1/2 lg:-translate-x-1/2"
+            className="absolute left-[31px] top-0 hidden h-full w-px bg-coal/10 sm:block"
           />
           {/* Animierte Vordergrund-Linie */}
           <div
             ref={lineRef}
             aria-hidden
-            className="absolute left-[27px] top-0 hidden h-full w-px bg-copper sm:block lg:left-1/2 lg:-translate-x-1/2"
+            className="absolute left-[31px] top-0 hidden h-full w-px bg-copper sm:block"
           />
 
-          <div className="space-y-20 lg:space-y-32">
-            {steps.map((s, i) => {
+          <div className="space-y-12 sm:space-y-16">
+            {steps.map((s) => {
               const Icon = s.icon;
-              const isEven = i % 2 === 1;
               return (
                 <div
                   key={s.nr}
                   data-step
-                  className={`relative grid gap-6 sm:grid-cols-[56px_1fr] sm:gap-8 lg:grid-cols-2 lg:gap-20 ${
-                    isEven ? 'lg:[&>*:first-child]:order-2' : ''
-                  }`}
+                  className="relative grid gap-5 sm:grid-cols-[64px_1fr] sm:gap-8"
                 >
-                  {/* Linke Seite (oder rechte bei isEven) */}
+                  {/* Dot/Number-Badge auf der Linie */}
                   <div
-                    className={`relative ${
-                      isEven ? 'lg:pl-16 lg:text-left' : 'lg:pr-16 lg:text-right'
-                    }`}
+                    data-dot
+                    className="relative z-10 grid h-16 w-16 place-items-center rounded-full bg-coal text-copper ring-8 ring-cream-100"
                   >
-                    {/* Number-Badge auf der Linie (Desktop: zentriert) */}
-                    <div
-                      data-num
-                      className={`absolute top-0 z-10 grid h-14 w-14 place-items-center rounded-full bg-coal text-copper ring-8 ring-cream-100 sm:left-0 lg:left-auto ${
-                        isEven
-                          ? 'lg:-left-7 lg:right-auto'
-                          : 'lg:-right-7 lg:left-auto'
-                      }`}
-                    >
-                      <span className="font-display text-base font-bold">
-                        {s.nr}
-                      </span>
-                    </div>
-
-                    {/* Zeit-Tag */}
-                    <div
-                      className={`flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper ${
-                        isEven ? '' : 'lg:justify-end'
-                      }`}
-                    >
-                      <Clock size={12} />
-                      {s.zeit}
-                    </div>
-
-                    <h3 className="mt-4 font-display text-3xl font-bold leading-tight text-coal sm:text-4xl">
-                      {s.title}
-                    </h3>
-                    <p
-                      className={`mt-4 max-w-md text-lg leading-relaxed text-coal/75 ${
-                        isEven ? '' : 'lg:ml-auto'
-                      }`}
-                    >
-                      {s.desc}
-                    </p>
+                    <span className="font-display text-lg font-bold">
+                      {s.nr}
+                    </span>
                   </div>
 
-                  {/* Andere Seite: Detail-Karte mit Hover-Animation */}
-                  <div className="sm:col-start-2 lg:col-start-auto">
-                    <div className="group relative rounded-3xl border border-coal/10 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-copper/30 hover:shadow-xl sm:p-8">
-                      <div className="flex items-start gap-5">
-                        <div className="grid h-14 w-14 flex-none place-items-center rounded-2xl bg-coal text-copper transition-transform duration-500 group-hover:rotate-[-6deg] group-hover:scale-110">
-                          <Icon size={26} strokeWidth={2.1} />
+                  {/* Karte mit Inhalt */}
+                  <div className="group relative overflow-hidden rounded-3xl border border-coal/10 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-copper/40 hover:shadow-2xl sm:p-8">
+                    {/* Großer dekorativer Hintergrund-Nummer */}
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute -right-2 -top-6 font-display text-[10rem] font-black leading-none text-coal/[0.04] transition-colors duration-500 group-hover:text-copper/10"
+                    >
+                      {s.nr}
+                    </span>
+
+                    <div className="relative">
+                      {/* Zeit + Icon Zeile */}
+                      <div className="flex items-start justify-between gap-4">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-coal px-3 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-copper">
+                          <Clock size={11} /> {s.zeit}
                         </div>
-                        <div className="font-display text-sm font-semibold uppercase tracking-widest text-coal/40 group-hover:text-coal transition">
-                          Was passiert
+                        <div className="grid h-14 w-14 flex-none place-items-center rounded-2xl bg-cream-200/50 text-coal transition-all duration-500 group-hover:rotate-[-6deg] group-hover:scale-110 group-hover:bg-copper group-hover:text-white">
+                          <Icon size={26} strokeWidth={2.1} />
                         </div>
                       </div>
 
-                      <ul className="mt-6 space-y-3">
+                      {/* Title */}
+                      <h3 className="mt-5 font-display text-2xl font-bold leading-tight text-coal sm:text-3xl">
+                        {s.title}
+                      </h3>
+
+                      {/* Description */}
+                      <p className="mt-3 max-w-prose text-lg leading-relaxed text-coal/75">
+                        {s.desc}
+                      </p>
+
+                      {/* Details: erscheinen bei Hover smooth */}
+                      <ul className="mt-6 grid gap-2.5 border-t border-coal/10 pt-5">
                         {s.details.map((d, di) => (
                           <li
                             key={di}
-                            className="flex items-start gap-3 text-coal/75 transition-all duration-500"
-                            style={{ transitionDelay: `${di * 50}ms` }}
+                            className="flex items-start gap-3 text-sm text-coal/70 transition-all duration-300"
+                            style={{ transitionDelay: `${di * 60}ms` }}
                           >
-                            <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-copper" />
+                            <span className="mt-1.5 h-1.5 w-1.5 flex-none rounded-full bg-copper transition group-hover:scale-150" />
                             <span>{d}</span>
                           </li>
                         ))}
                       </ul>
-
-                      {/* Großer Hintergrund-Nummer für Editorial-Touch */}
-                      <span
-                        aria-hidden
-                        className="pointer-events-none absolute bottom-3 right-5 font-display text-[8rem] font-black leading-none text-coal/[0.04] transition group-hover:text-copper/10"
-                      >
-                        {s.nr}
-                      </span>
                     </div>
                   </div>
                 </div>
@@ -267,7 +243,7 @@ export default function Prozess() {
             Das war es. <span className="text-copper">Vier Schritte.</span>
           </p>
           <a href="#kontakt" className="btn-primary mt-6">
-            Schritt 1 starten
+            Schritt 1 starten <ArrowRight size={18} />
           </a>
         </div>
       </div>

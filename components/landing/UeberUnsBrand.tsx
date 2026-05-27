@@ -122,19 +122,45 @@ export default function UeberUnsBrand() {
             return (
               <motion.div
                 key={w.titel}
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-60px' }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="rounded-2xl border border-white/10 bg-white/[0.03] p-7"
+                transition={{
+                  duration: 0.6,
+                  delay: i * 0.12,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                whileHover={{ y: -6 }}
+                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-7 transition-colors hover:border-copper/40 hover:bg-white/[0.06]"
               >
-                <div className="grid h-12 w-12 place-items-center rounded-xl bg-copper text-coal">
-                  <Icon size={22} strokeWidth={2.3} />
-                </div>
-                <h4 className="mt-6 font-display text-xl font-bold">{w.titel}</h4>
-                <p className="mt-3 text-sm leading-relaxed text-white/65">
+                {/* Dekorative Hintergrund-Nummer */}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute -right-4 -top-8 font-display text-[8rem] font-black leading-none text-white/[0.04] transition group-hover:text-copper/15"
+                >
+                  0{i + 1}
+                </span>
+
+                <motion.div
+                  whileHover={{ rotate: -8, scale: 1.1 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 18 }}
+                  className="relative grid h-14 w-14 place-items-center rounded-xl bg-copper text-coal"
+                >
+                  <Icon size={24} strokeWidth={2.3} />
+                </motion.div>
+
+                <h4 className="relative mt-6 font-display text-xl font-bold">
+                  {w.titel}
+                </h4>
+                <p className="relative mt-3 text-sm leading-relaxed text-white/65">
                   {w.text}
                 </p>
+
+                {/* Hover-Underline Reveal */}
+                <span
+                  aria-hidden
+                  className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-copper transition-transform duration-500 group-hover:scale-x-100"
+                />
               </motion.div>
             );
           })}

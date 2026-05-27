@@ -111,10 +111,10 @@ export default function Leistungen() {
 
         {/* === Sticky Scroll Showcase === */}
         <div className="mt-20 grid gap-10 lg:grid-cols-12 lg:gap-16">
-          {/* Linke Spalte: Sticky Bild (Desktop) */}
+          {/* Linke Spalte: Sticky Bild — vertikal in Viewport zentriert */}
           <div className="hidden lg:col-span-5 lg:block">
-            <div className="sticky top-28">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-coal shadow-2xl">
+            <div className="sticky top-0 flex h-screen items-center">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-coal shadow-2xl">
                 {services.map((s, i) => (
                   <div
                     key={s.nr}

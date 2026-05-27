@@ -139,9 +139,9 @@ export default function Prozess() {
           <div className="lg:col-span-7">
             <span className="eyebrow">So arbeiten wir</span>
             <h2 className="editorial-h2 mt-5 text-coal">
-              Vier ehrliche Schritte —
+              Vier ehrliche Schritte.
               <br />
-              <span className="text-copper">ganz ohne Kleingedrucktes.</span>
+              <span className="text-copper">Ganz ohne Kleingedrucktes.</span>
             </h2>
           </div>
           <div className="lg:col-span-5">

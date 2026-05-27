@@ -30,9 +30,9 @@ export default function AnforderungenNew() {
         >
           <span className="eyebrow">Was wir suchen</span>
           <h2 className="editorial-h2 mt-5 text-coal">
-            Vier Dinge —
+            Vier Dinge.
             <br />
-            <span className="text-copper">mehr ist nicht nötig.</span>
+            <span className="text-copper">Mehr ist nicht nötig.</span>
           </h2>
         </motion.div>
 

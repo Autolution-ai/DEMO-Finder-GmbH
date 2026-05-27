@@ -55,9 +55,9 @@ export default function MonteurStimmen() {
         >
           <span className="eyebrow">Stimmen aus dem Team</span>
           <h2 className="editorial-h2 mt-5 text-coal">
-            Fragen Sie nicht uns —
+            Fragen Sie nicht uns.
             <br />
-            <span className="text-copper">fragen Sie unser Team.</span>
+            <span className="text-copper">Fragen Sie unser Team.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-coal/70">
             Hier kommen die zu Wort, die jeden Tag bei uns arbeiten. Ungekürzt

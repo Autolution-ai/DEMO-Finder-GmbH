@@ -34,9 +34,9 @@ export default function Kontakt() {
         >
           <span className="eyebrow">Kontakt</span>
           <h2 className="editorial-h2 mt-5 text-coal">
-            Schreiben Sie uns —
+            Schreiben Sie uns.
             <br />
-            <span className="text-copper">wir freuen uns auf Sie.</span>
+            <span className="text-copper">Wir freuen uns auf Sie.</span>
           </h2>
           <p className="mt-6 max-w-prose text-coal/70">
             Montag bis Freitag zwischen 8 und 14 Uhr erreichen Sie uns

@@ -179,8 +179,8 @@ export default function UeberUnsBrand() {
             </h3>
           </div>
           <p className="max-w-md text-lg leading-relaxed text-white/70">
-            Wir sind klein genug, dass Sie jeden von uns persönlich kennenlernen —
-            und groß genug, um auch komplexe Sanierungen verlässlich umzusetzen.
+            Wir sind klein genug, dass Sie jeden von uns persönlich kennenlernen.
+            Und groß genug, um auch komplexe Sanierungen verlässlich umzusetzen.
           </p>
         </div>
 

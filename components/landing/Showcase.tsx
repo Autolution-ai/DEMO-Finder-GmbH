@@ -28,8 +28,8 @@ export default function Showcase() {
             wird ein Bad, das Sie <span className="text-copper">lieben werden.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
-            Drei Wochen Bauzeit, eigene Monteure und ein verbindlicher Festpreis —
-            so sieht eine typische Sanierung in einem Berliner Altbau aus.
+            Drei Wochen Bauzeit, eigene Monteure und ein verbindlicher Festpreis.
+            So sieht eine typische Sanierung in einem Berliner Altbau aus.
             Bewegen Sie den Regler und erleben Sie den Unterschied.
           </p>
         </div>

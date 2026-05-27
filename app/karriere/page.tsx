@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
+import AktuelleStellen from '@/components/karriere/AktuelleStellen';
 import SchmerzSection from '@/components/SchmerzSection';
 import Benefits from '@/components/Benefits';
 import DeinTag from '@/components/DeinTag';
@@ -13,6 +14,7 @@ import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
 import JsonLd from '@/components/JsonLd';
+import KarriereJsonLd from '@/components/karriere/KarriereJsonLd';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -25,9 +27,11 @@ export default function KarrierePage() {
   return (
     <>
       <JsonLd />
+      <KarriereJsonLd />
       <Nav />
       <main>
         <Hero />
+        <AktuelleStellen />
         <SchmerzSection />
         <Benefits />
         <DeinTag />

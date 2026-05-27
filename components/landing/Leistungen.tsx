@@ -9,7 +9,7 @@ const services = [
   {
     nr: '01',
     titel: 'Heizung',
-    desc: 'Brennwert, Hybrid, Wärmepumpe. Beratung bis Inbetriebnahme. Förderanträge inklusive.',
+    desc: 'Wärmepumpe, Fernwärme, Gas oder Öl. Beratung, Planung, Förderantrag bei BAFA und KfW. Reparatur und Wartung aller Systeme.',
     img: IMG.service.heizung,
   },
   {

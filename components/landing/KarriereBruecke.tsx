@@ -39,15 +39,30 @@ export default function KarriereBruecke() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="/karriere" className="btn-primary">
+            <a href="/karriere#stellen" className="btn-primary">
               Offene Stellen ansehen <ArrowRight size={18} />
             </a>
             <a href="/karriere#bewerben" className="btn-light">
               In 3 Minuten bewerben
             </a>
           </div>
+
+          {/* Quick-Preview der Stellen */}
+          <div className="mt-10 flex flex-wrap gap-2 text-sm">
+            <Tag>Anlagenmechaniker SHK</Tag>
+            <Tag>Servicetechniker</Tag>
+            <Tag>Ausbildung 2026</Tag>
+          </div>
         </motion.div>
       </div>
     </section>
+  );
+}
+
+function Tag({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="rounded-full border border-white/20 bg-white/[0.04] px-3 py-1.5 text-white/80">
+      {children}
+    </span>
   );
 }

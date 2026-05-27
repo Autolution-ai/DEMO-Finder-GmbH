@@ -16,9 +16,9 @@ export default function DatenschutzPage() {
           <h1 className="text-4xl font-bold sm:text-5xl">Datenschutzerklärung</h1>
 
           <p className="mt-6 text-sm text-ink/60">
-            Diese Karriereseite wird betrieben von der Finder GmbH, Greifswalder
+            Diese Webseite wird betrieben von der Finder GmbH, Greifswalder
             Str. 23, 10405 Berlin. Verantwortlich im Sinne der DSGVO ist die
-            Geschäftsführung (Thomas Finder &amp; Dietmar Erler).
+            Geschäftsführung (Thomas Finder, Dietmar Erler, Jörg Stolz).
           </p>
 
           <Section titel="1. Erhebung und Speicherung personenbezogener Daten">

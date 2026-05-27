@@ -24,13 +24,13 @@ export default function ImpressumPage() {
             </p>
           </section>
 
-          <Field label="Geschäftsführer" value="Thomas Finder & Dietmar Erler" />
+          <Field label="Geschäftsführer" value="Thomas Finder, Dietmar Erler, Jörg Stolz" />
           <Field label="Öffnungszeiten" value="Montag – Freitag 08:00 – 14:00 Uhr" />
           <Field label="Telefon" value={<a href="tel:+493070073555" className="text-copper hover:underline">030 70073555</a>} />
           <Field label="E-Mail" value={<a href="mailto:info@finder-gmbh.info" className="text-copper hover:underline">info@finder-gmbh.info</a>} />
           <Field label="Registergericht" value="Amtsgericht Charlottenburg" />
-          <Field label="Registernummer" value="–" />
-          <Field label="Umsatzsteuer-ID" value="–" />
+          <Field label="Registernummer" value="HRB 126326 B" />
+          <Field label="Umsatzsteuer-ID" value={<span className="text-coal/50">— (Platzhalter, vom Kunden ergänzen)</span>} />
 
           <section className="mt-10">
             <h2 className="section-h2">Bildnachweise</h2>

@@ -9,8 +9,15 @@ export default function JsonLd() {
         '@type': 'LocalBusiness',
         '@id': 'https://karriere.finder-gmbh.info/#org',
         name: 'Finder GmbH',
+        legalName: 'Finder GmbH',
+        foundingDate: '2010',
         description:
-          'SHK-Betrieb für Sanitär, Heizung und Klimatechnik in Berlin und Brandenburg. Kundendienst, Wartung, Service.',
+          'Meisterbetrieb für Installation und Heizungsbau seit 2010. Heizung, Sanitär, Klima und Lüftung in Berlin und Brandenburg.',
+        founders: [
+          { '@type': 'Person', name: 'Thomas Finder' },
+          { '@type': 'Person', name: 'Dietmar Erler' },
+          { '@type': 'Person', name: 'Jörg Stolz' },
+        ],
         url: 'https://karriere.finder-gmbh.info',
         telephone: '+49-30-70073555',
         email: 'info@finder-gmbh.info',

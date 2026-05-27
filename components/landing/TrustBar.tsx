@@ -3,20 +3,30 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 
-const stats = [
-  { value: 15, suffix: '+', label: 'Jahre in Berlin' },
+type Stat = {
+  value: number;
+  suffix: string;
+  label: string;
+  decimals?: number;
+  raw?: boolean; // ohne Tausender-Trennzeichen (z.B. Jahreszahl)
+};
+
+const stats: Stat[] = [
+  { value: 2010, suffix: '', label: 'Gegründet in Berlin', raw: true },
   { value: 2500, suffix: '+', label: 'Aufträge pro Jahr' },
-  { value: 24, suffix: 'h', label: 'Notdienst' },
+  { value: 3, suffix: '', label: 'Meister im Betrieb' },
   { value: 4.9, suffix: '★', label: 'Google Bewertung', decimals: 1 },
 ];
 
 function Counter({
   to,
   decimals = 0,
+  raw = false,
   duration = 1.6,
 }: {
   to: number;
   decimals?: number;
+  raw?: boolean;
   duration?: number;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -42,7 +52,9 @@ function Counter({
     <span ref={ref}>
       {decimals > 0
         ? val.toFixed(decimals).replace('.', ',')
-        : Math.round(val).toLocaleString('de-DE')}
+        : raw
+          ? String(Math.round(val))
+          : Math.round(val).toLocaleString('de-DE')}
     </span>
   );
 }
@@ -62,7 +74,7 @@ export default function TrustBar() {
               className="flex items-baseline gap-3"
             >
               <div className="font-display text-5xl font-bold text-copper">
-                <Counter to={s.value} decimals={s.decimals ?? 0} />
+                <Counter to={s.value} decimals={s.decimals ?? 0} raw={s.raw ?? false} />
                 <span>{s.suffix}</span>
               </div>
               <div className="text-sm uppercase tracking-widest text-white/50">

@@ -1,39 +1,42 @@
-import Nav from '@/components/Nav';
-import Hero from '@/components/Hero';
-import SchmerzSection from '@/components/SchmerzSection';
-import Benefits from '@/components/Benefits';
-import DeinTag from '@/components/DeinTag';
-import ScrollStory from '@/components/ScrollStory';
-import UeberUns from '@/components/UeberUns';
-import Stimmen from '@/components/Stimmen';
-import Anforderungen from '@/components/Anforderungen';
-import Funnel from '@/components/Funnel';
-import FAQ from '@/components/FAQ';
-import FinalCTA from '@/components/FinalCTA';
+import NavBrand from '@/components/landing/NavBrand';
+import HeroCinematic from '@/components/landing/HeroCinematic';
+import TrustBar from '@/components/landing/TrustBar';
+import Leistungen from '@/components/landing/Leistungen';
+import Showcase from '@/components/landing/Showcase';
+import Prozess from '@/components/landing/Prozess';
+import UeberUnsBrand from '@/components/landing/UeberUnsBrand';
+import Kundenstimmen from '@/components/landing/Kundenstimmen';
+import KarriereBruecke from '@/components/landing/KarriereBruecke';
+import FAQKunden from '@/components/landing/FAQKunden';
+import Kontakt from '@/components/landing/Kontakt';
 import Footer from '@/components/Footer';
-import StickyMobileCTA from '@/components/StickyMobileCTA';
 import JsonLd from '@/components/JsonLd';
+import type { Metadata } from 'next';
 
-export default function Page() {
+export const metadata: Metadata = {
+  title: 'Finder GmbH | Sanitär, Heizung und Bad in Berlin',
+  description:
+    'Familienbetrieb für Sanitär, Heizung, Bad und Notdienst in Berlin Prenzlauer Berg. 15+ Jahre Erfahrung, 2.500+ Aufträge im Jahr, eigenes Team. Jetzt Termin anfragen.',
+};
+
+export default function LandingPage() {
   return (
     <>
       <JsonLd />
-      <Nav />
-      <main>
-        <Hero />
-        <SchmerzSection />
-        <Benefits />
-        <DeinTag />
-        <ScrollStory />
-        <UeberUns />
-        <Stimmen />
-        <Anforderungen />
-        <Funnel />
-        <FAQ />
-        <FinalCTA />
+      <NavBrand />
+      <main className="bg-cream">
+        <HeroCinematic />
+        <TrustBar />
+        <Leistungen />
+        <Showcase />
+        <Prozess />
+        <UeberUnsBrand />
+        <Kundenstimmen />
+        <KarriereBruecke />
+        <FAQKunden />
+        <Kontakt />
       </main>
       <Footer />
-      <StickyMobileCTA />
     </>
   );
 }

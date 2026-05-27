@@ -30,6 +30,14 @@ const config: Config = {
           800: '#1E293B',
           900: '#0F172A',
         },
+        // Editorial palette für Brand-Landing
+        coal: '#0A0A0A',
+        anthra: '#1A1A1A',
+        cream: {
+          DEFAULT: '#F7F3ED',
+          100: '#FBF8F4',
+          200: '#EDE6DA',
+        },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],

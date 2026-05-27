@@ -16,15 +16,15 @@ const services = [
     icon: Flame,
     titel: 'Heizung',
     sub: 'Wärmepumpe · Brennwert · Hybrid',
-    text: 'Wir beraten, planen und montieren neue Heizungen für Wohnhäuser, Mehrfamilienobjekte und Gewerbe. BAFA- und KfW-Förderanträge übernehmen wir komplett.',
+    text: 'Ob neue Wärmepumpe, klassische Brennwerttherme oder die richtige Lösung für ein Mehrfamilienhaus — wir begleiten Sie von der ersten Beratung über die Planung bis zur Inbetriebnahme. Förderanträge bei BAFA und KfW übernehmen wir vollständig.',
     img: IMG.service.heizung,
   },
   {
     nr: '02',
     icon: Bath,
     titel: 'Badsanierung',
-    sub: 'Komplett aus einer Hand',
-    text: 'Vom ersten Strich bis zur letzten Fuge. Eigene Gewerke, feste Partner für Fliesen und Elektrik. Standard-Bad in 3 bis 5 Wochen Bauzeit.',
+    sub: 'Alles aus einer Hand',
+    text: 'Vom ersten Entwurf bis zur letzten Fuge gestalten wir Ihr Bad mit eigenem Team. Für Fliesen und Elektrik arbeiten wir mit langjährigen Partnern. Ein Standardbad ist in drei bis fünf Wochen einzugsbereit.',
     img: IMG.service.bad,
   },
   {
@@ -32,7 +32,7 @@ const services = [
     icon: Droplets,
     titel: 'Sanitär',
     sub: 'Installation · Tausch · Reparatur',
-    text: 'Wasser, Abfluss, Armaturen. Vom tropfenden Hahn bis zur kompletten Steigleitungs-Sanierung. Sauber gearbeitet, am Ende durchgekehrt.',
+    text: 'Vom tropfenden Wasserhahn bis zur kompletten Steigleitungs-Sanierung sind wir Ihre Adresse. Wir arbeiten sauber, gründlich und hinterlassen die Baustelle so, wie wir sie selbst vorfinden möchten.',
     img: IMG.service.sanitaer,
   },
   {
@@ -40,15 +40,15 @@ const services = [
     icon: Wrench,
     titel: 'Wartung',
     sub: 'Jährlich · Mit Protokoll',
-    text: 'Heizungs-Inspektion und Wartung für Brennwert, Wärmepumpe, Gas und Öl. Mit schriftlichem Protokoll. Termin per Telefon oder WhatsApp.',
+    text: 'Eine jährliche Wartung Ihrer Heizung verlängert die Lebensdauer und spart spürbar Energie. Wir warten Brennwertanlagen, Wärmepumpen, Gas- und Ölheizungen — auf Wunsch erinnern wir Sie automatisch an den nächsten Termin.',
     img: IMG.service.wartung,
   },
   {
     nr: '05',
     icon: Siren,
     titel: 'Notdienst',
-    sub: 'Werktags · Vor-Ort in 4 – 6 Stunden',
-    text: 'Wasserrohrbruch, Heizung ausgefallen, Therme defekt. Werktags 8 bis 14 Uhr persönlich am Telefon, Reaktion innerhalb von Stunden.',
+    sub: 'Werktags · Vor Ort in 4 – 6 Stunden',
+    text: 'Wasserrohrbruch, kalte Heizung, defekte Therme — werktags zwischen 8 und 14 Uhr sind wir persönlich am Telefon und meistens innerhalb weniger Stunden bei Ihnen. Keine versteckten Notdienst-Aufschläge.',
     img: IMG.service.notdienst,
   },
   {
@@ -56,7 +56,7 @@ const services = [
     icon: Wind,
     titel: 'Klima & Lüftung',
     sub: 'Wohnen · Büro · Praxis',
-    text: 'Split-Klima und kontrollierte Lüftung für Wohnung, Büro und Praxis. Auch im Berliner Altbau möglich, mit dezenter Leitungsführung.',
+    text: 'Angenehme Temperaturen in Wohnung, Büro oder Praxis — auch im Berliner Altbau. Wir planen Split-Klima-Anlagen und kontrollierte Lüftungen mit dezenter Leitungsführung, die sich harmonisch in den Raum einfügt.',
     img: IMG.service.klima,
   },
 ];
@@ -93,18 +93,18 @@ export default function Leistungen() {
         {/* Header asymmetrisch */}
         <div className="grid items-end gap-y-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-7">
-            <span className="eyebrow">Leistungen</span>
+            <span className="eyebrow">Unsere Leistungen</span>
             <h2 className="editorial-h2 mt-5 text-coal">
-              Sechs Dinge,
+              Sechs Bereiche,
               <br />
-              die wir <span className="text-copper">richtig</span> machen.
+              in denen wir <span className="text-copper">richtig gut</span> sind.
             </h2>
           </div>
           <div className="lg:col-span-5">
             <p className="text-lg leading-relaxed text-coal/70">
-              Heizung, Bad, Sanitär, Wartung, Notdienst, Klima. Alles aus einer
-              Hand, mit eigenem Team. Wir sagen Nein, wenn etwas nicht in unser
-              Können passt.
+              Heizung, Bad, Sanitär, Wartung, Notdienst und Klima — alles aus
+              einer Hand und mit eigenem Team. Was nicht zu unseren Stärken
+              gehört, sagen wir Ihnen ehrlich.
             </p>
           </div>
         </div>
@@ -228,10 +228,10 @@ export default function Leistungen() {
             <div className="mt-10 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-coal/10 bg-coal p-7 text-white">
               <div>
                 <div className="font-display text-lg font-semibold">
-                  Nichts dabei?
+                  Ihr Anliegen ist nicht dabei?
                 </div>
                 <div className="mt-1 text-sm text-white/70">
-                  Schreib uns, was du brauchst — wir sagen ehrlich, ob wir passen.
+                  Schreiben Sie uns kurz, was Sie brauchen. Wir sagen Ihnen ehrlich, ob wir die Richtigen sind.
                 </div>
               </div>
               <a href="#kontakt" className="btn-primary !py-3 !px-5 text-sm">

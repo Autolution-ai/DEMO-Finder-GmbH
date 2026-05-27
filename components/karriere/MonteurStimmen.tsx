@@ -55,13 +55,14 @@ export default function MonteurStimmen() {
         >
           <span className="eyebrow">Stimmen aus dem Team</span>
           <h2 className="editorial-h2 mt-5 text-coal">
-            Frag nicht uns.
+            Fragen Sie nicht uns —
             <br />
-            <span className="text-copper">Frag die, die hier arbeiten.</span>
+            <span className="text-copper">fragen Sie unser Team.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-coal/70">
-            O-Töne aus unserem Team, ungekürzt. Keine Marketing-Sprüche, kein
-            Geschäftsführer-Geschwafel.
+            Hier kommen die zu Wort, die jeden Tag bei uns arbeiten — ungekürzt
+            und ehrlich. Keine Marketing-Phrasen, keine geschönten
+            Geschäftsführer-Worte.
           </p>
         </motion.div>
       </div>
@@ -127,7 +128,7 @@ export default function MonteurStimmen() {
       </div>
 
       <p className="container-wide mt-10 text-center text-xs uppercase tracking-widest text-coal/40">
-        Echte Mitarbeiter-Fotos folgen mit dem Foto-Shooting im Sommer
+        Persönliche Mitarbeiter-Fotos folgen mit unserem Foto-Shooting im Sommer
       </p>
     </section>
   );

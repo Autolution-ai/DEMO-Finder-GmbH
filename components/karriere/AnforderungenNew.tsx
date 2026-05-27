@@ -4,17 +4,17 @@ import { motion } from 'framer-motion';
 import { Check, X, Briefcase, IdCard, MessageSquare, Heart } from 'lucide-react';
 
 const ja = [
-  { icon: Briefcase, label: 'Ausbildung Anlagenmechaniker SHK oder vergleichbar' },
-  { icon: IdCard, label: 'Führerschein Klasse B' },
-  { icon: MessageSquare, label: 'Deutsch B2 oder gutes Englisch' },
-  { icon: Heart, label: 'Bock auf Kunden, kein Baustellen-Mindset' },
+  { icon: Briefcase, label: 'Abgeschlossene Ausbildung als Anlagenmechaniker SHK oder vergleichbar' },
+  { icon: IdCard, label: 'Führerschein der Klasse B' },
+  { icon: MessageSquare, label: 'Gute Deutschkenntnisse (B2) oder gutes Englisch' },
+  { icon: Heart, label: 'Freude am Kundenkontakt — keine Baustellen-Mentalität' },
 ];
 
 const nein = [
-  'Lebenslauf-Lücken (interessieren uns nicht)',
-  'Anschreiben (brauchen wir nicht)',
-  'Perfekte Noten (egal)',
-  'Berufserfahrung-Mindestjahre (kommt drauf an)',
+  'Lückenlose Lebensläufe (interessieren uns nicht)',
+  'Ein klassisches Anschreiben (benötigen wir nicht)',
+  'Perfekte Schulnoten (sind für uns nebensächlich)',
+  'Eine bestimmte Mindestzahl an Berufsjahren',
 ];
 
 export default function AnforderungenNew() {
@@ -30,9 +30,9 @@ export default function AnforderungenNew() {
         >
           <span className="eyebrow">Was wir suchen</span>
           <h2 className="editorial-h2 mt-5 text-coal">
-            Vier Sachen.
+            Vier Dinge —
             <br />
-            <span className="text-copper">Mehr nicht.</span>
+            <span className="text-copper">mehr ist nicht nötig.</span>
           </h2>
         </motion.div>
 
@@ -50,7 +50,7 @@ export default function AnforderungenNew() {
                 <Check size={20} strokeWidth={3} />
               </div>
               <h3 className="font-display text-2xl font-bold text-coal">
-                Das brauchst du
+                Das bringen Sie mit
               </h3>
             </div>
 
@@ -91,7 +91,7 @@ export default function AnforderungenNew() {
                 <X size={20} strokeWidth={3} />
               </div>
               <h3 className="font-display text-2xl font-bold">
-                Das brauchst du nicht
+                Das brauchen Sie nicht
               </h3>
             </div>
 
@@ -112,9 +112,9 @@ export default function AnforderungenNew() {
             </ul>
 
             <p className="mt-10 border-t border-white/10 pt-6 text-sm leading-relaxed text-white/65">
-              Wir sortieren Bewerbungen nicht nach Papier. Wir wollen wissen, ob
-              du anpacken kannst und ob es menschlich passt. Den Rest sehen wir
-              im Gespräch.
+              Wir sortieren Bewerbungen nicht nach Papier. Uns interessiert,
+              ob Sie anpacken können und ob es menschlich zusammenpasst. Den
+              Rest besprechen wir in Ruhe im persönlichen Gespräch.
             </p>
           </motion.div>
         </div>

@@ -12,11 +12,11 @@ const stellen = [
     typ: 'Vollzeit · Festanstellung',
     ort: 'Berlin Prenzlauer Berg',
     gehalt: 'bis 4.600 € brutto',
-    kurz: 'Du fährst von Kunde zu Kunde, wartest Heizungen, behebst Störungen, baust Therme oder Wärmepumpe ein. Kein Akkord, kein Rohbau.',
+    kurz: 'Sie fahren von Kunde zu Kunde, warten Heizungsanlagen, beheben Störungen und installieren Thermen oder Wärmepumpen. Bei uns erwartet Sie kein Akkord und kein Rohbau — sondern echter Handwerksstolz.',
     punkte: [
-      'Ausbildung als Anlagenmechaniker SHK oder vergleichbar',
-      'Führerschein Klasse B',
-      'Erfahrung im Kundendienst von Vorteil',
+      'Abgeschlossene Ausbildung als Anlagenmechaniker SHK oder vergleichbar',
+      'Führerschein der Klasse B',
+      'Erfahrung im Kundendienst ist von Vorteil',
     ],
     badge: 'Sofort',
     badgeColor: 'bg-copper text-coal',
@@ -28,11 +28,11 @@ const stellen = [
     typ: 'Vollzeit · Festanstellung',
     ort: 'Berlin & Brandenburg',
     gehalt: 'bis 4.400 € brutto',
-    kurz: 'Schwerpunkt Wartung und Inspektion. Brennwerttherme, Wärmepumpe, Gas, Öl. Mit Protokoll, Diagnose, Beratung beim Kunden.',
+    kurz: 'Ihr Schwerpunkt liegt auf Wartung und Inspektion von Brennwerttherme, Wärmepumpe sowie Gas- und Ölheizungen. Sie erstellen Protokolle, stellen Diagnosen und beraten unsere Kunden direkt vor Ort.',
     punkte: [
-      'Erfahrung in Wartung von Heizungsanlagen',
-      'Selbstständige Arbeitsweise',
-      'Gepflegtes Auftreten im Kundenkontakt',
+      'Erfahrung in der Wartung von Heizungsanlagen',
+      'Selbstständige und strukturierte Arbeitsweise',
+      'Gepflegtes Auftreten im direkten Kundenkontakt',
     ],
     badge: 'Offen',
     badgeColor: 'bg-white/10 text-white',
@@ -43,12 +43,12 @@ const stellen = [
     titel: 'Ausbildung Anlagenmechaniker:in SHK (m/w/d)',
     typ: '3,5 Jahre · Start jährlich im August',
     ort: 'Berlin Prenzlauer Berg',
-    gehalt: 'bis 1.200 € im 3. Jahr',
-    kurz: 'Du lernst alles. Heizungsbau, Sanitärinstallation, Wartung, Kundendienst. Mit echten Aufgaben ab Woche eins, nicht nur Werkzeug halten.',
+    gehalt: 'bis 1.200 € im 3. Lehrjahr',
+    kurz: 'Bei uns lernen Sie alles, was den Beruf ausmacht: Heizungsbau, Sanitärinstallation, Wartung und Kundendienst. Schon ab der ersten Woche übernehmen Sie echte Aufgaben — und halten nicht nur das Werkzeug.',
     punkte: [
       'Guter Hauptschulabschluss oder besser',
-      'Bock auf Handwerk, Lust auf Verantwortung',
-      'Pünktlich, zuverlässig, teamfähig',
+      'Begeisterung für Handwerk und Lust auf Verantwortung',
+      'Pünktlichkeit, Zuverlässigkeit und Teamgeist',
     ],
     badge: 'Start 2026',
     badgeColor: 'bg-white/10 text-white',
@@ -70,8 +70,9 @@ export default function AktuelleStellen() {
           </div>
           <div className="lg:col-span-5">
             <p className="text-lg leading-relaxed text-white/70">
-              Keine Rolle dabei und du passt trotzdem? Schreib uns. Wir wachsen
-              und stellen ein, wenn die Person stimmt.
+              Sie finden Ihre Wunschrolle nicht in der Liste, möchten aber zu
+              uns gehören? Schreiben Sie uns trotzdem. Wir wachsen und stellen
+              ein, wann immer die Person zu uns passt.
             </p>
           </div>
         </div>
@@ -162,7 +163,7 @@ export default function AktuelleStellen() {
         </div>
 
         <p className="mt-10 text-center text-xs uppercase tracking-widest text-white/40">
-          Verbindliche Stellen auf{' '}
+          Alle verbindlichen Stellenausschreibungen finden Sie auf{' '}
           <a
             href="https://join.com/companies/finderjobs"
             target="_blank"

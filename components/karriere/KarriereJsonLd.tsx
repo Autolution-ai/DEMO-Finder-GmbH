@@ -24,7 +24,7 @@ export default function KarriereJsonLd() {
       title: 'Anlagenmechaniker SHK Kundendienst (m/w/d)',
       employmentType: 'FULL_TIME',
       description:
-        'Du fährst von Kunde zu Kunde, wartest Heizungen, behebst Störungen, baust Thermen oder Wärmepumpen ein. Kein Akkord, kein Rohbau.',
+        'Sie fahren von Kunde zu Kunde, warten Heizungen, beheben Störungen und installieren Thermen oder Wärmepumpen. Kein Akkord, kein Rohbau.',
       minSalary: 3800,
       maxSalary: 4600,
     },

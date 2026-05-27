@@ -53,16 +53,17 @@ export default function KarriereBruecke() {
           >
             <span className="eyebrow-light">Karriere bei Finder</span>
             <h2 className="editorial-h1 mt-5 text-white">
-              Du bist Anlagen­mechaniker?
+              Sie sind Anlagen­mechaniker?
               <br />
               <span className="text-copper italic font-serif font-normal">
-                Wir suchen dich.
+                Wir freuen uns auf Sie.
               </span>
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75">
-              Kundendienst statt Baustelle. Eigener Firmenwagen, übertariflich,
-              Antwort in 24 Stunden auf deine Bewerbung. Drei offene Stellen
-              gerade.
+              Bei uns erwartet Sie der Kundendienst statt der Baustelle: ein
+              eigener Firmenwagen, übertarifliche Bezahlung und eine
+              persönliche Antwort innerhalb von 24 Stunden. Aktuell sind drei
+              Stellen offen.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3">
@@ -126,7 +127,7 @@ export default function KarriereBruecke() {
               href="/karriere"
               className="mt-6 flex items-center justify-between rounded-2xl border border-dashed border-white/15 px-5 py-4 text-sm text-white/60 transition hover:border-copper/40 hover:text-white"
             >
-              <span>Alles zur Karriere bei Finder</span>
+              <span>Mehr über eine Karriere bei Finder erfahren</span>
               <ArrowRight size={16} />
             </a>
           </motion.div>

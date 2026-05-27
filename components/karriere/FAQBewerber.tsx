@@ -7,35 +7,35 @@ import { Plus, Minus } from 'lucide-react';
 const items = [
   {
     q: 'Wie lange dauert die Probezeit?',
-    a: 'Sechs Monate, wie überall. Aber die letzten zehn Einstellungen haben wir alle nach der Probezeit übernommen. Wir stellen nicht ein, um wieder zu trennen.',
+    a: 'Bei uns gilt die übliche Probezeit von sechs Monaten. Allerdings haben wir die letzten zehn Einstellungen ausnahmslos übernommen — wir stellen niemanden ein, um uns später wieder zu trennen.',
   },
   {
     q: 'Bekomme ich den Firmenwagen auch privat?',
-    a: 'Nach Absprache: ja. Wir regeln das pragmatisch, kein 1%-Theater wenn du es nicht willst. Tankkarte bekommst du sowieso.',
+    a: 'Selbstverständlich, sofern Sie das möchten. Wir regeln das ganz pragmatisch mit Ihnen — kein kompliziertes 1-Prozent-Theater. Die Tankkarte erhalten Sie ohnehin.',
   },
   {
     q: 'Wie sieht die Einarbeitung aus?',
-    a: 'Die ersten zwei Wochen fährst du mit einem erfahrenen Kollegen mit. Danach eigene Tour, aber Rückfragen jederzeit per Telefon. Niemand wird ins kalte Wasser geworfen.',
+    a: 'In den ersten zwei Wochen begleiten Sie einen erfahrenen Kollegen auf seinen Touren. Danach übernehmen Sie eine eigene Tour — bei Rückfragen ist jederzeit jemand für Sie am Telefon erreichbar. Wir werfen niemanden ins kalte Wasser.',
   },
   {
-    q: 'Wie sind die Arbeitszeiten wirklich?',
-    a: 'Montag bis Freitag, 7 bis 17 Uhr. Notdienst nur freiwillig und extra bezahlt. Wochenenden sind frei. Versprochen.',
+    q: 'Wie sehen die Arbeitszeiten tatsächlich aus?',
+    a: 'Sie arbeiten von Montag bis Freitag zwischen 7 und 17 Uhr. Notdienst übernehmen Sie nur freiwillig und werden dafür extra vergütet. Die Wochenenden gehören Ihnen — versprochen.',
   },
   {
-    q: 'Was passiert wenn ich Quereinsteiger bin?',
-    a: 'Ohne Ausbildung als Anlagenmechaniker SHK oder vergleichbar passt es leider nicht. Wir können dich nicht im laufenden Betrieb komplett ausbilden. Über unsere Ausbildungsstelle könnte es passen.',
+    q: 'Was, wenn ich Quereinsteiger bin?',
+    a: 'Ohne abgeschlossene Ausbildung als Anlagenmechaniker SHK oder eine vergleichbare Qualifikation können wir Sie im laufenden Betrieb leider nicht komplett ausbilden. Über unsere Ausbildungsstelle wäre ein Einstieg aber gut möglich.',
   },
   {
-    q: 'Was verdiene ich konkret?',
-    a: 'Je nach Erfahrung 3.800 bis 4.600 € brutto im Monat, plus Zuschläge. Transparent im Vertrag, ab Tag eins. Genaues besprechen wir im Gespräch.',
+    q: 'Was werde ich konkret verdienen?',
+    a: 'Je nach Erfahrung erhalten Sie zwischen 3.800 und 4.600 € brutto im Monat, dazu kommen Zuschläge. Alles steht transparent im Arbeitsvertrag, ab dem ersten Tag. Die genauen Zahlen besprechen wir gerne im persönlichen Gespräch.',
   },
   {
-    q: 'Wie schnell hört ihr euch?',
-    a: 'Innerhalb von 24 Stunden nach deiner Bewerbung, garantiert. Meist ruft Thomas, Dietmar oder Jörg persönlich an.',
+    q: 'Wie schnell höre ich von Ihnen?',
+    a: 'Garantiert innerhalb von 24 Stunden nach Ihrer Bewerbung. In den meisten Fällen meldet sich Thomas, Dietmar oder Jörg persönlich bei Ihnen.',
   },
   {
-    q: 'Wer entscheidet, ob ich genommen werde?',
-    a: 'Die Geschäftsführer plus der Teamleiter, mit dem du arbeiten würdest. Bei uns gibt es keine HR-Abteilung, die deine Bewerbung ablehnt, weil dein Anschreiben „zu kurz" ist.',
+    q: 'Wer entscheidet über meine Einstellung?',
+    a: 'Bei uns entscheiden die Geschäftsführer gemeinsam mit dem Teamleiter, mit dem Sie zusammenarbeiten würden. Wir haben keine HR-Abteilung, die Ihre Bewerbung wegen eines „zu kurzen Anschreibens" aussortiert.',
   },
 ];
 
@@ -50,22 +50,22 @@ export default function FAQBewerber() {
           <h2 className="editorial-h2 mt-5 text-coal">
             Was Bewerber
             <br />
-            <span className="text-copper">wirklich wissen wollen.</span>
+            <span className="text-copper">wirklich wissen möchten.</span>
           </h2>
           <p className="mt-6 max-w-prose text-coal/70">
-            Wenn deine Frage hier nicht steht, schreib uns im Bewerbungs-Funnel
-            mit rein oder ruf an. Wir antworten ehrlich, auch wenn die Antwort
-            „Nein" ist.
+            Sollte Ihre Frage hier nicht dabei sein: Schreiben Sie sie gern in
+            das Bewerbungsformular hinein oder rufen Sie uns an. Wir antworten
+            ehrlich — auch wenn die Antwort einmal „Nein" lauten sollte.
           </p>
 
           <div className="mt-8 rounded-2xl border border-coal/10 bg-white p-6">
             <div className="font-display text-base font-semibold text-coal">
-              Antwort-Garantie
+              Unser Antwort-Versprechen
             </div>
             <p className="mt-2 text-sm leading-relaxed text-coal/65">
               Jede Bewerbung wird innerhalb von 24 Stunden persönlich
-              beantwortet. Auch eine Absage. Keine Funkstille, keine
-              Massenmails.
+              beantwortet — auch eine Absage. Keine Funkstille, keine
+              automatischen Massenmails.
             </p>
           </div>
         </div>

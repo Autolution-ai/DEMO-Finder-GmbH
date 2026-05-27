@@ -13,9 +13,9 @@ type Stat = {
 
 const stats: Stat[] = [
   { value: 2010, suffix: '', label: 'Gegründet in Berlin', raw: true },
-  { value: 2500, suffix: '+', label: 'Aufträge pro Jahr' },
+  { value: 2500, suffix: '+', label: 'Zufriedene Kunden pro Jahr' },
   { value: 3, suffix: '', label: 'Meister im Betrieb' },
-  { value: 4.9, suffix: '★', label: 'Google Bewertung', decimals: 1 },
+  { value: 4.9, suffix: '★', label: 'Bewertung auf Google', decimals: 1 },
 ];
 
 function Counter({

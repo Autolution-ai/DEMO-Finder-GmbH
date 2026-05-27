@@ -9,35 +9,35 @@ const team = [
   {
     name: 'Thomas Finder',
     rolle: 'Geschäftsführer',
-    bio: 'Gründer der Finder GmbH. Meister mit über 30 Jahren Erfahrung in Heizungsbau und Sanitärinstallation in Berlin.',
+    bio: 'Gründer der Finder GmbH und Meister mit über 30 Jahren Erfahrung im Berliner Heizungsbau und in der Sanitärtechnik. Sein Anspruch: handwerkliche Sorgfalt, bei jedem einzelnen Auftrag.',
   },
   {
     name: 'Dietmar Erler',
     rolle: 'Geschäftsführer',
-    bio: 'Verantwortlich für Technik und Projektplanung. Spezialist für Wärmepumpen-Umrüstung und Förderanträge.',
+    bio: 'Verantwortlich für Technik und Projektplanung. Als Spezialist für Wärmepumpen-Umrüstung und Förderanträge begleitet er Sie durch jeden Schritt der Energiewende im eigenen Zuhause.',
   },
   {
     name: 'Jörg Stolz',
     rolle: 'Geschäftsführer',
-    bio: 'Kümmert sich um Kundendienst, Wartung und das Tagesgeschäft. Erste Anlaufstelle für Hausverwaltungen.',
+    bio: 'Ihr Ansprechpartner für Kundendienst und Wartung. Erste Adresse für Hausverwaltungen, die einen verlässlichen Partner für ihre Bestände suchen.',
   },
 ];
 
 const werte = [
   {
     icon: Handshake,
-    titel: 'Beste Beratung',
-    text: 'Beratung beginnt nicht beim Verkauf. Wir hören zu, schauen uns die Anlage an, sagen ehrlich, was wir empfehlen würden.',
+    titel: 'Ehrliche Beratung',
+    text: 'Gute Beratung beginnt nicht beim Verkauf, sondern beim Zuhören. Wir nehmen uns Zeit, schauen uns Ihre Anlage genau an und empfehlen das, was wirklich zu Ihnen passt — auch wenn es das günstigere Angebot ist.',
   },
   {
     icon: Award,
     titel: 'Höchste Qualität',
-    text: 'Markenprodukte von Viessmann, Vaillant, Buderus. Eigene Monteure mit Meisterabschluss. Keine billigen Kompromisse.',
+    text: 'Wir arbeiten mit Markenprodukten von Viessmann, Vaillant und Buderus. Unsere Monteure tragen einen Meisterabschluss in der Tasche. Bei Materialien und Verarbeitung machen wir keine Kompromisse.',
   },
   {
     icon: Users,
     titel: 'Eigenes Team',
-    text: 'Heizung, Sanitär und Klima machen wir selbst. Für Elektrik und Fliesen arbeiten wir mit zwei festen Partnern, die wir kennen.',
+    text: 'Heizung, Sanitär und Klima erledigen wir mit eigenen Mitarbeitern. Für Elektrik und Fliesen vertrauen wir auf zwei langjährige Partnerbetriebe, deren Qualität wir persönlich kennen.',
   },
 ];
 
@@ -110,9 +110,9 @@ export default function UeberUnsBrand() {
         <div className="mb-12 max-w-2xl">
           <span className="eyebrow-light">Worauf wir Wert legen</span>
           <h3 className="editorial-h2 mt-4 text-white">
-            Drei Dinge,
+            Drei Werte,
             <br />
-            <span className="text-copper">die wir nicht verhandeln.</span>
+            <span className="text-copper">an denen wir festhalten.</span>
           </h3>
         </div>
 
@@ -175,12 +175,12 @@ export default function UeberUnsBrand() {
             <h3 className="editorial-h2 mt-4 text-white">
               Drei Meister,
               <br />
-              <span className="text-copper">ein Versprechen.</span>
+              <span className="text-copper">ein gemeinsames Versprechen.</span>
             </h3>
           </div>
           <p className="max-w-md text-lg leading-relaxed text-white/70">
-            Wir sind klein genug, dass du jeden von uns kennenlernst. Groß
-            genug, um auch komplexe Sanierungen durchzuziehen.
+            Wir sind klein genug, dass Sie jeden von uns persönlich kennenlernen —
+            und groß genug, um auch komplexe Sanierungen verlässlich umzusetzen.
           </p>
         </div>
 
@@ -222,7 +222,7 @@ export default function UeberUnsBrand() {
         </div>
 
         <p className="mt-8 text-center text-xs uppercase tracking-widest text-white/40">
-          Echte Portrait-Fotos folgen mit dem nächsten Foto-Shooting.
+          Persönliche Portraits folgen mit unserem nächsten Foto-Shooting
         </p>
       </div>
     </section>

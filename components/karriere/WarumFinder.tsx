@@ -16,7 +16,7 @@ const benefits = [
     icon: Wrench,
     titel: 'Kundendienst statt Baustelle',
     zahl: '90 %',
-    text: 'Wartung, Service, Störungsbehebung in fertigen Wohnungen. Kein Rohbau, kein Akkord, kein Dreck unter den Fingernägeln am Feierabend.',
+    text: 'Bei uns warten Sie Heizungsanlagen, beheben Störungen und beraten Kunden in deren Zuhause. Kein Rohbau, kein Akkord, kein Baustellen-Stress — sondern echtes Handwerk in fertigen Räumen.',
     img: IMG.service.wartung,
   },
   {
@@ -24,23 +24,23 @@ const benefits = [
     icon: Euro,
     titel: 'Übertarifliche Bezahlung',
     zahl: 'bis 4.600 €',
-    text: 'Brutto im Monat plus Zuschläge für Notdienst und Wochenend-Einsätze. Transparent im Vertrag, ab Tag eins, schriftlich.',
+    text: 'Sie erhalten ein faires Gehalt deutlich über Tarif — plus Zuschläge für Notdienst und Wochenend-Einsätze. Alles transparent im Arbeitsvertrag, ab dem ersten Tag und schriftlich.',
     img: IMG.service.heizung,
   },
   {
     nr: '03',
     icon: Truck,
-    titel: 'Dein eigener Firmenwagen',
+    titel: 'Ihr eigener Firmenwagen',
     zahl: '24/7',
-    text: 'VW Caddy oder vergleichbar. Tankkarte inklusive. Auch privat nutzbar nach Absprache. Werkzeug bleibt im Auto, nicht im Kofferraum deines Privatwagens.',
+    text: 'Sie bekommen einen VW Caddy oder ein vergleichbares Fahrzeug inklusive Tankkarte — auf Wunsch auch zur privaten Nutzung. Ihr Werkzeug bleibt im Firmenwagen, nicht in Ihrem eigenen Kofferraum.',
     img: IMG.service.notdienst,
   },
   {
     nr: '04',
     icon: Clock,
-    titel: 'Feierabend ist Feierabend',
+    titel: 'Pünktlicher Feierabend',
     zahl: '17:00',
-    text: 'Montag bis Freitag, planbare Wochen. Wochenende gehört dir. Notdienst nur freiwillig und extra bezahlt. Keine „kannst du noch schnell"-Anrufe.',
+    text: 'Sie arbeiten von Montag bis Freitag in planbaren Wochen — Ihr Wochenende gehört Ihnen. Notdienst übernehmen Sie nur freiwillig und werden dafür extra vergütet. Keine spontanen „nur schnell noch"-Anrufe.',
     img: IMG.hero.livingRoom,
   },
   {
@@ -48,7 +48,7 @@ const benefits = [
     icon: PiggyBank,
     titel: 'Betriebliche Altersvorsorge',
     zahl: '+ 150 €',
-    text: 'Wir zahlen monatlich drauf, ohne dass du etwas vom Netto opfern musst. Plus Vermögenswirksame Leistungen. Plus Weihnachtsgeld.',
+    text: 'Wir legen monatlich für Ihre Zukunft drauf, ohne dass Sie etwas von Ihrem Netto abgeben müssen — zusätzlich zu Vermögenswirksamen Leistungen und Weihnachtsgeld.',
     img: IMG.hero.workshopDawn,
   },
   {
@@ -56,7 +56,7 @@ const benefits = [
     icon: Hammer,
     titel: 'Top-Werkzeug & Marken-Kleidung',
     zahl: 'Neu',
-    text: 'Hilti, Makita, Knipex. Engelbert Strauss Arbeitskleidung. Nichts Gebrauchtes, nichts Halbes. Wer gutes Werkzeug bekommt, arbeitet besser.',
+    text: 'Sie arbeiten mit Profi-Werkzeug von Hilti, Makita und Knipex sowie hochwertiger Arbeitskleidung von Engelbert Strauss. Wir glauben: Wer mit gutem Werkzeug arbeitet, macht auch gute Arbeit.',
     img: IMG.atmosphere.werkstatt,
   },
 ];
@@ -96,13 +96,14 @@ export default function WarumFinder() {
             <h2 className="editorial-h2 mt-5 text-coal">
               Sechs Gründe,
               <br />
-              <span className="text-copper">heute zu wechseln.</span>
+              <span className="text-copper">heute zu uns zu wechseln.</span>
             </h2>
           </div>
           <div className="lg:col-span-5">
             <p className="text-lg leading-relaxed text-coal/70">
-              Kein Marketing-Versprechen. Steht so im Arbeitsvertrag und auf der
-              Lohnabrechnung. Wenn nicht, hörst du uns lebenslang zuhören.
+              Das sind keine leeren Marketing-Versprechen, sondern fester
+              Bestandteil unseres Arbeitsvertrags und Ihrer Lohnabrechnung.
+              Sollten wir uns daran nicht halten, sagen Sie uns das gern direkt.
             </p>
           </div>
         </div>

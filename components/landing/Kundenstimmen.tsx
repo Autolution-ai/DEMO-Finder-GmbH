@@ -69,9 +69,9 @@ export default function Kundenstimmen() {
         >
           <span className="eyebrow">Stimmen unserer Kunden</span>
           <h2 className="editorial-h2 mt-5 text-coal">
-            Was Berliner
+            Was unsere Kunden
             <br />
-            über uns <span className="text-copper">erzählen.</span>
+            über uns <span className="text-copper">sagen.</span>
           </h2>
         </motion.div>
 
@@ -168,7 +168,7 @@ export default function Kundenstimmen() {
       </div>
 
       <p className="container-wide mt-10 text-center text-xs uppercase tracking-widest text-coal/40">
-        Hover stoppt die Animation · Echte Google-Rezensionen aus dem Profil
+        Mauszeiger pausiert die Animation · Echte Google-Rezensionen aus unserem Profil
       </p>
     </section>
   );

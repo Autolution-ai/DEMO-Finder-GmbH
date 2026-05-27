@@ -25,19 +25,19 @@ const stats: Stat[] = [
     icon: Truck,
     value: 100,
     suffix: ' %',
-    label: 'Firmenwagen für dich',
+    label: 'Eigener Firmenwagen',
   },
   {
     icon: Clock,
     value: 24,
     suffix: ' h',
-    label: 'Antwort garantiert',
+    label: 'Persönliche Antwort',
   },
   {
     icon: ShieldCheck,
     value: 0,
     suffix: '',
-    label: 'Akkord. Niemals.',
+    label: 'Akkord — nie wieder',
   },
 ];
 

@@ -29,15 +29,15 @@ export default function FinalCTANew() {
           className="mx-auto max-w-3xl text-center"
         >
           <h2 className="editorial-h1 text-white">
-            Bock auf einen Job{' '}
+            Lust auf einen Job{' '}
             <span className="text-copper italic font-serif font-normal">
               ohne
             </span>{' '}
-            Bullshit?
+            leere Versprechen?
           </h2>
           <p className="mx-auto mt-8 max-w-xl text-xl text-white/80">
-            Drei Minuten. Vier Fragen. Antwort innerhalb von 24 Stunden,
-            persönlich von Thomas, Dietmar oder Jörg.
+            Drei Minuten Zeit, vier Fragen — und Sie hören innerhalb von 24
+            Stunden persönlich von Thomas, Dietmar oder Jörg.
           </p>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4">

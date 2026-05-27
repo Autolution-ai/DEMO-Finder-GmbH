@@ -6,28 +6,28 @@ import { Plus, Minus } from 'lucide-react';
 
 const items = [
   {
-    q: 'Wie schnell kommt jemand bei einem Notfall?',
-    a: 'Werktags zwischen 8 und 14 Uhr sind wir telefonisch erreichbar. In dringenden Fällen schicken wir innerhalb von 4 bis 6 Stunden einen Monteur. Außerhalb dieser Zeiten antworten wir am nächsten Werktag.',
+    q: 'Wie schnell sind Sie bei einem Notfall vor Ort?',
+    a: 'Werktags zwischen 8 und 14 Uhr erreichen Sie uns persönlich am Telefon. In dringenden Fällen schicken wir innerhalb von 4 bis 6 Stunden einen Monteur zu Ihnen. Außerhalb dieser Zeiten melden wir uns spätestens am nächsten Werktag bei Ihnen.',
   },
   {
-    q: 'Was kostet eine neue Heizung im Schnitt?',
-    a: 'Eine moderne Gas-Brennwertanlage liegt im Berliner Bestand bei 8.000 bis 14.000 €, eine Wärmepumpe je nach Gebäude bei 22.000 bis 38.000 €. Der genaue Preis kommt nach Vor-Ort-Termin, schriftlich, ohne versteckte Kosten.',
+    q: 'Was kostet eine neue Heizung im Durchschnitt?',
+    a: 'Für eine moderne Gas-Brennwertanlage im Berliner Bestand liegen Sie bei 8.000 bis 14.000 €. Eine Wärmepumpe schlägt je nach Gebäude mit 22.000 bis 38.000 € zu Buche. Den genauen Preis erhalten Sie nach unserem Vor-Ort-Termin — schriftlich und ohne versteckte Kosten.',
   },
   {
-    q: 'Übernehmt ihr Förderanträge?',
-    a: 'Ja. BAFA, KfW, IBB. Wir kennen die aktuellen Programme, bereiten die Unterlagen vor und reichen sie mit dir gemeinsam ein. Kein Aufpreis dafür.',
+    q: 'Übernehmen Sie auch die Förderanträge?',
+    a: 'Selbstverständlich. Wir kennen die aktuellen Programme von BAFA, KfW und IBB im Detail, bereiten alle Unterlagen für Sie vor und reichen sie gemeinsam mit Ihnen ein. Dafür berechnen wir keinen Aufpreis.',
   },
   {
-    q: 'Wie lange dauert eine Bad­sanierung?',
-    a: 'Standardbad in einer Berliner Altbauwohnung: 3 bis 5 Wochen ab Auftragsbestätigung. Wir blockieren keine 8 Wochen für einen 4-Wochen-Job.',
+    q: 'Wie lange dauert eine Badsanierung?',
+    a: 'Ein Standardbad in einer Berliner Altbauwohnung ist bei uns in drei bis fünf Wochen einzugsbereit, gerechnet ab Auftragsbestätigung. Wir blockieren keine acht Wochen für ein Vier-Wochen-Projekt.',
   },
   {
-    q: 'Arbeitet ihr mit Subunternehmern?',
-    a: 'Heizung, Sanitär und Klima machen wir mit eigenem Personal. Für Elektrik und Fliesen arbeiten wir mit zwei festen Partnerbetrieben, die wir seit Jahren kennen.',
+    q: 'Arbeiten Sie mit Subunternehmern?',
+    a: 'Heizung, Sanitär und Klima erledigen wir mit eigenem Personal. Für Elektrik und Fliesenarbeiten vertrauen wir auf zwei langjährige Partnerbetriebe, deren Qualität wir persönlich kennen.',
   },
   {
-    q: 'Bekomme ich ein verbindliches Angebot?',
-    a: 'Ja, schriftlich, mit Festpreis pro Position. Gilt 30 Tage. Wenn sich während der Arbeit unerwartet etwas ändert, sprechen wir vorher mit dir, bevor die Rechnung höher wird.',
+    q: 'Erhalte ich ein verbindliches Angebot?',
+    a: 'Ja — schriftlich, mit Festpreis pro Position und 30 Tage gültig. Sollte sich während der Arbeit unerwartet etwas ändern, sprechen wir vorher mit Ihnen, bevor sich der Preis bewegt.',
   },
 ];
 
@@ -40,13 +40,13 @@ export default function FAQKunden() {
         <div className="lg:col-span-5">
           <span className="eyebrow">Häufige Fragen</span>
           <h2 className="editorial-h2 mt-5 text-coal">
-            Was du wissen
+            Was Sie noch
             <br />
-            <span className="text-copper">willst.</span>
+            <span className="text-copper">wissen möchten.</span>
           </h2>
           <p className="mt-6 max-w-prose text-coal/70">
-            Wenn deine Frage hier nicht steht, schreib uns einfach. Wir
-            antworten in unter 24 Stunden.
+            Ist Ihre Frage hier nicht dabei? Schreiben Sie uns einfach. Wir
+            antworten in der Regel innerhalb von 24 Stunden.
           </p>
         </div>
 

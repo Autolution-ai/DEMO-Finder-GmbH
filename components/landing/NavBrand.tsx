@@ -15,7 +15,7 @@ const linksLanding = [
 const linksKarriere = [
   { href: '/karriere#stellen', label: 'Offene Stellen' },
   { href: '/karriere#benefits', label: 'Benefits' },
-  { href: '/karriere#tag', label: 'Dein Tag' },
+  { href: '/karriere#tag', label: 'Ihr Tag bei uns' },
   { href: '/karriere#faq', label: 'FAQ' },
   { href: '/', label: '← Hauptseite' },
 ];

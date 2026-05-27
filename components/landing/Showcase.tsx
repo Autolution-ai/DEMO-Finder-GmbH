@@ -21,16 +21,16 @@ export default function Showcase() {
       <div className="container-wide">
         {/* Editorial Header: groß, mittig, ohne klassische Zwei-Spalter-Optik */}
         <div className="mx-auto max-w-4xl text-center">
-          <span className="eyebrow-light">Projektreferenz · Bad­sanierung</span>
+          <span className="eyebrow-light">Projektreferenz · Badsanierung</span>
           <h2 className="editorial-h2 mt-5 text-white">
             Aus einem Bad von <span className="text-copper">1992</span>
             <br />
-            wird ein Bad von <span className="text-copper">heute.</span>
+            wird ein Bad, das Sie <span className="text-copper">lieben werden.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
-            Drei Wochen Bauzeit. Eigene Monteure. Ein Festpreis. Zieh den
-            Slider und sieh dir an, was bei einer typischen Berliner
-            Altbau-Sanierung passiert.
+            Drei Wochen Bauzeit, eigene Monteure und ein verbindlicher Festpreis —
+            so sieht eine typische Sanierung in einem Berliner Altbau aus.
+            Bewegen Sie den Regler und erleben Sie den Unterschied.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export default function Showcase() {
         <div className="mx-auto mt-10 grid max-w-4xl grid-cols-3 divide-x divide-white/10 rounded-2xl border border-white/10 bg-white/[0.02] text-center">
           <Stat value="3 Wochen" label="Bauzeit" />
           <Stat value="1 Team" label="Eigene Monteure" />
-          <Stat value="Festpreis" label="Keine Nachträge" />
+          <Stat value="Festpreis" label="Ohne Nachträge" />
         </div>
 
         <motion.div
@@ -107,8 +107,8 @@ export default function Showcase() {
           </div>
 
           <p className="mt-5 text-center text-sm text-white/50">
-            Slider per Maus oder Touch verschieben. Echte Kunden-Projekte folgen
-            mit dem Foto-Shooting im Sommer.
+            Regler per Maus oder Berührung bewegen. Echte Kundenprojekte folgen
+            nach unserem Foto-Shooting im Sommer.
           </p>
         </motion.div>
       </div>

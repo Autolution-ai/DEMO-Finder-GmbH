@@ -23,24 +23,25 @@ export default function DatenschutzPage() {
 
           <Section titel="1. Erhebung und Speicherung personenbezogener Daten">
             <p>
-              Wir verarbeiten personenbezogene Daten nur, soweit dies zur
-              Bereitstellung dieser Website und zur Bearbeitung deiner
-              Bewerbung erforderlich ist (Art. 6 Abs. 1 lit. b und f DSGVO).
+              Wir verarbeiten Ihre personenbezogenen Daten nur, soweit dies zur
+              Bereitstellung dieser Website und zur Bearbeitung Ihrer
+              Bewerbung oder Kontaktanfrage erforderlich ist (Art. 6 Abs. 1
+              lit. b und f DSGVO).
             </p>
           </Section>
 
           <Section titel="2. Bewerbungsformular">
             <p>
-              Wenn du dich über das Online-Formular bewirbst, übermittelst du uns
-              folgende Daten: Name, Telefonnummer sowie deine Antworten zu
-              Ausbildung, Berufserfahrung, Führerschein und Startwunsch.
+              Wenn Sie sich über unser Online-Formular bewerben, übermitteln
+              Sie uns folgende Daten: Name, Telefonnummer sowie Ihre Antworten
+              zu Ausbildung, Berufserfahrung, Führerschein und Startwunsch.
             </p>
             <p className="mt-3">
-              Diese Daten verwenden wir ausschließlich zur Bearbeitung deiner
+              Diese Daten verwenden wir ausschließlich zur Bearbeitung Ihrer
               Bewerbung und zur Kontaktaufnahme. Eine Weitergabe an Dritte
               erfolgt nicht. Nach Abschluss des Bewerbungsverfahrens werden
-              die Daten spätestens nach 6 Monaten gelöscht – außer du stimmst
-              einer längeren Speicherung zu.
+              die Daten spätestens nach 6 Monaten gelöscht — sofern Sie einer
+              längeren Speicherung nicht ausdrücklich zustimmen.
             </p>
           </Section>
 
@@ -56,8 +57,8 @@ export default function DatenschutzPage() {
             <p>
               Diese Website setzt ausschließlich technisch notwendige Cookies
               ein. Es werden keine Tracking-Cookies, kein Google Analytics
-              und keine Marketing-Pixel verwendet, solange du nicht ausdrücklich
-              zustimmst.
+              und keine Marketing-Pixel verwendet, solange Sie nicht
+              ausdrücklich zustimmen.
             </p>
           </Section>
 
@@ -68,20 +69,20 @@ export default function DatenschutzPage() {
             </p>
           </Section>
 
-          <Section titel="6. Deine Rechte">
+          <Section titel="6. Ihre Rechte">
             <p>
-              Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung,
-              Einschränkung der Verarbeitung, Datenübertragbarkeit und
-              Widerspruch. Kontaktiere uns dafür unter{' '}
+              Sie haben jederzeit das Recht auf Auskunft, Berichtigung,
+              Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
+              und Widerspruch. Kontaktieren Sie uns dafür einfach unter{' '}
               <a href="mailto:info@finder-gmbh.info" className="text-copper hover:underline">
                 info@finder-gmbh.info
               </a>
               .
             </p>
             <p className="mt-3">
-              Du hast außerdem das Recht, dich bei einer Datenschutzaufsichts­behörde
-              zu beschweren – in Berlin: Berliner Beauftragte für Datenschutz
-              und Informationsfreiheit.
+              Sie haben außerdem das Recht, sich bei einer
+              Datenschutz-Aufsichtsbehörde zu beschweren — in Berlin: Berliner
+              Beauftragte für Datenschutz und Informationsfreiheit.
             </p>
           </Section>
 

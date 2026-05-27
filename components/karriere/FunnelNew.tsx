@@ -47,15 +47,15 @@ export default function FunnelNew() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <span className="eyebrow-light">Deine Bewerbung</span>
+          <span className="eyebrow-light">Ihre Bewerbung</span>
           <h2 className="editorial-h2 mt-5 text-white">
-            In 3 Minuten.
+            In nur 3 Minuten.
             <br />
             <span className="text-copper">Ohne Anschreiben. Ohne PDF.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/70">
-            Vier Fragen, deine Handynummer. Du hörst innerhalb von 24 Stunden
-            persönlich von uns. Versprochen.
+            Vier kurze Fragen, Ihre Handynummer — mehr brauchen wir nicht. Sie
+            hören innerhalb von 24 Stunden persönlich von uns. Versprochen.
           </p>
         </motion.div>
 
@@ -70,7 +70,7 @@ export default function FunnelNew() {
                 <div className="mb-8">
                   <div className="mb-4 flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-coal/60">
                     <span>Frage {step + 1} von {TOTAL}</span>
-                    <span className="text-copper">{Math.round(progress)} %</span>
+                    <span className="text-copper">{Math.round(progress)} % geschafft</span>
                   </div>
                   <div className="flex gap-1.5">
                     {Array.from({ length: TOTAL }).map((_, i) => (
@@ -93,7 +93,7 @@ export default function FunnelNew() {
                     transition={{ duration: 0.25 }}
                   >
                     {step === 0 && (
-                      <Frage titel="Hast du eine Ausbildung als Anlagenmechaniker SHK?">
+                      <Frage titel="Haben Sie eine Ausbildung als Anlagenmechaniker SHK?">
                         <Choices
                           value={a.ausbildung}
                           onChange={(v) => {
@@ -102,7 +102,7 @@ export default function FunnelNew() {
                           }}
                           options={[
                             { v: 'ja', label: 'Ja, abgeschlossen' },
-                            { v: 'vergleichbar', label: 'Vergleichbare Ausbildung' },
+                            { v: 'vergleichbar', label: 'Eine vergleichbare Ausbildung' },
                             { v: 'nein', label: 'Nein' },
                           ]}
                         />
@@ -110,7 +110,7 @@ export default function FunnelNew() {
                     )}
 
                     {step === 1 && (
-                      <Frage titel="Wie viele Jahre Berufserfahrung hast du?">
+                      <Frage titel="Wie viele Jahre Berufserfahrung bringen Sie mit?">
                         <Choices
                           value={a.jahre}
                           onChange={(v) => {
@@ -128,7 +128,7 @@ export default function FunnelNew() {
                     )}
 
                     {step === 2 && (
-                      <Frage titel="Hast du einen Führerschein Klasse B?">
+                      <Frage titel="Haben Sie einen Führerschein der Klasse B?">
                         <Choices
                           value={a.fuehrerschein}
                           onChange={(v) => {
@@ -144,7 +144,7 @@ export default function FunnelNew() {
                     )}
 
                     {step === 3 && (
-                      <Frage titel="Wann könntest du bei uns anfangen?">
+                      <Frage titel="Wann könnten Sie bei uns starten?">
                         <Choices
                           value={a.start}
                           onChange={(v) => {
@@ -162,13 +162,13 @@ export default function FunnelNew() {
                     )}
 
                     {step === 4 && (
-                      <Frage titel="Wie heißt du und wie erreichen wir dich?">
+                      <Frage titel="Wie heißen Sie und wie erreichen wir Sie?">
                         <div className="space-y-4">
                           <input
                             type="text"
                             aria-label="Vor- und Nachname"
                             autoComplete="name"
-                            placeholder="Dein Vor- und Nachname"
+                            placeholder="Ihr Vor- und Nachname"
                             value={a.name ?? ''}
                             onChange={(e) => setA({ ...a, name: e.target.value })}
                             className="w-full rounded-xl border-2 border-coal/10 bg-cream-100 px-5 py-4 text-base outline-none transition focus:border-copper focus:bg-white"
@@ -178,7 +178,7 @@ export default function FunnelNew() {
                             inputMode="tel"
                             aria-label="Handynummer"
                             autoComplete="tel"
-                            placeholder="Handynummer"
+                            placeholder="Ihre Handynummer"
                             value={a.telefon ?? ''}
                             onChange={(e) => setA({ ...a, telefon: e.target.value })}
                             className="w-full rounded-xl border-2 border-coal/10 bg-cream-100 px-5 py-4 text-base outline-none transition focus:border-copper focus:bg-white"
@@ -191,19 +191,19 @@ export default function FunnelNew() {
                               className="mt-0.5 h-5 w-5 flex-none accent-copper"
                             />
                             <span className="text-coal">
-                              <strong className="font-semibold">Per WhatsApp ist mir am liebsten.</strong>
+                              <strong className="font-semibold">Bitte melden Sie sich per WhatsApp.</strong>
                               <br />
                               <span className="text-xs text-coal/60">
-                                Schnellste Antwort, oft innerhalb einer Stunde während der Bürozeiten.
+                                Schnellste Antwort, oft innerhalb einer Stunde während unserer Bürozeiten.
                               </span>
                             </span>
                           </label>
                           <p className="text-xs text-coal/55">
-                            Mit dem Absenden stimmst du der{' '}
+                            Mit dem Absenden stimmen Sie unserer{' '}
                             <a href="/datenschutz" className="text-copper underline">
                               Datenschutzerklärung
                             </a>{' '}
-                            zu. Wir nutzen deine Daten nur für deine Bewerbung.
+                            zu. Wir nutzen Ihre Daten ausschließlich für Ihre Bewerbung.
                           </p>
                         </div>
                       </Frage>
@@ -247,11 +247,11 @@ export default function FunnelNew() {
                 <Phone size={18} className="flex-none text-copper" />
                 <div>
                   <div className="text-sm font-semibold">Lieber telefonieren?</div>
-                  <div className="text-xs text-white/60">030 70073555 · Mo–Fr 8–14</div>
+                  <div className="text-xs text-white/60">030 70073555 · Mo–Fr 8–14 Uhr</div>
                 </div>
               </a>
               <a
-                href="https://wa.me/493070073555?text=Hallo%2C%20ich%20bewerbe%20mich%20bei%20Finder%20GmbH%20als%20Anlagenmechaniker."
+                href="https://wa.me/493070073555?text=Guten%20Tag%2C%20ich%20m%C3%B6chte%20mich%20bei%20der%20Finder%20GmbH%20als%20Anlagenmechaniker%20bewerben."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/[0.04] p-4 transition hover:border-copper/50 hover:bg-white/[0.06]"
@@ -259,7 +259,7 @@ export default function FunnelNew() {
                 <MessageCircle size={18} className="flex-none text-copper" />
                 <div>
                   <div className="text-sm font-semibold">WhatsApp direkt</div>
-                  <div className="text-xs text-white/60">Schreib uns einfach</div>
+                  <div className="text-xs text-white/60">Schreiben Sie uns einfach</div>
                 </div>
               </a>
             </div>
@@ -334,11 +334,11 @@ function Erfolg({ name }: { name?: string }) {
         <Check size={36} strokeWidth={3} />
       </motion.div>
       <h3 className="mt-8 font-display text-3xl font-bold text-coal">
-        Danke{name ? `, ${name.split(' ')[0]}` : ''}.
+        Vielen Dank{name ? `, Herr/Frau ${name.split(' ').slice(-1)[0]}` : ''}.
       </h3>
       <p className="mx-auto mt-4 max-w-md text-lg leading-relaxed text-coal/70">
-        Wir melden uns innerhalb von 24 Stunden persönlich. Nicht per Massenmail,
-        sondern direkt von Thomas, Dietmar oder Jörg.
+        Wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen — nicht per
+        Massenmail, sondern direkt von Thomas, Dietmar oder Jörg.
       </p>
     </motion.div>
   );
@@ -348,15 +348,16 @@ function Absage() {
   return (
     <div className="text-center">
       <h3 className="font-display text-2xl font-bold text-coal">
-        Ehrliche Antwort.
+        Eine ehrliche Antwort.
       </h3>
       <p className="mx-auto mt-4 max-w-md text-coal/70">
-        Ohne Ausbildung als Anlagenmechaniker SHK oder vergleichbar passt es
-        leider nicht. Falls dich unsere{' '}
+        Ohne abgeschlossene Ausbildung als Anlagenmechaniker SHK oder eine
+        vergleichbare Qualifikation passt es bei uns leider nicht. Vielleicht
+        ist unsere{' '}
         <a href="#stellen" className="text-copper underline">
           Ausbildungsstelle
         </a>{' '}
-        interessiert, melde dich gern dort.
+        etwas für Sie?
       </p>
       <a
         href="tel:+493070073555"

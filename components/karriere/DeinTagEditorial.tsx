@@ -15,43 +15,43 @@ const tag = [
   {
     zeit: '07:00',
     icon: Sunrise,
-    titel: 'Werkstatt',
-    text: 'Kaffee. Tour-Übersicht auf dem Tablet. Werkzeug ist seit gestern im Caddy.',
+    titel: 'Start in der Werkstatt',
+    text: 'Sie beginnen Ihren Tag mit einem Kaffee und einem Blick auf die Tour-Übersicht im Tablet. Ihr Werkzeug ist bereits seit gestern fest im Firmenwagen verstaut.',
     img: IMG.hero.workshopDawn,
   },
   {
     zeit: '08:00',
     icon: Coffee,
     titel: 'Erste Adresse',
-    text: 'Kundendienst-Termin. Heizung läuft unrund. Du diagnostizierst, redest, löst.',
+    text: 'Ein Kundendienst-Termin steht an. Die Heizung läuft nicht rund — Sie hören zu, stellen die Diagnose und lösen das Problem. Sauber, ruhig, kompetent.',
     img: IMG.hero.caddyStreet,
   },
   {
     zeit: '12:00',
     icon: Soup,
-    titel: 'Mittag',
-    text: 'Eine Stunde Pause. Wo du willst, nicht in einer Werkstatt-Kantine.',
+    titel: 'Mittagspause',
+    text: 'Eine ganze Stunde Pause — und Sie entscheiden, wo Sie diese verbringen möchten. Nicht eingequetscht zwischen Werkbänken in einer Kantine.',
     img: IMG.hero.livingRoom,
   },
   {
     zeit: '14:00',
     icon: Wrench,
-    titel: 'Wartung Brennwert',
-    text: 'Jährliche Inspektion. Routine, kein Stress. Mit schriftlichem Protokoll.',
+    titel: 'Wartung der Brennwerttherme',
+    text: 'Eine geplante Jahresinspektion steht auf dem Programm — Routine, kein Zeitdruck. Sie arbeiten gründlich und dokumentieren alles im Protokoll.',
     img: IMG.service.wartung,
   },
   {
     zeit: '16:30',
     icon: ClipboardCheck,
-    titel: 'Bericht & Rückgabe',
-    text: 'Kurz dokumentieren. Werkstatt. Auto bleibt bei dir, wenn du willst.',
+    titel: 'Bericht & Rückkehr',
+    text: 'Eine kurze Dokumentation, dann zurück in die Werkstatt. Ihren Firmenwagen können Sie auf Wunsch direkt mit nach Hause nehmen.',
     img: IMG.atmosphere.werkstatt,
   },
   {
     zeit: '17:00',
     icon: Home,
-    titel: 'Feierabend',
-    text: 'Pünktlich. Wirklich. Ohne „nur noch schnell". Dein Tag gehört wieder dir.',
+    titel: 'Pünktlicher Feierabend',
+    text: 'Punkt fünf Uhr ist Feierabend. Wirklich. Ohne „nur noch schnell"-Anrufe — Ihr Abend gehört wieder ganz Ihnen und Ihrer Familie.',
     img: IMG.hero.livingRoom,
   },
 ];
@@ -98,16 +98,16 @@ export default function DeinTagEditorial() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <span className="eyebrow-light">Dein Tag bei uns</span>
+          <span className="eyebrow-light">Ihr Tag bei uns</span>
           <h2 className="editorial-h2 mt-5 text-white">
-            Sieben Stunden.
+            Sieben Stunden,
             <br />
-            <span className="text-copper">Planbar. Sauber.</span>
+            <span className="text-copper">planbar und sauber.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/70">
-            So sieht ein durchschnittlicher Werktag bei uns aus. Keine
-            10-Stunden-Schichten, kein Akkord, kein „eigentlich solltest du
-            schon weiter sein".
+            So sieht ein typischer Werktag bei uns aus. Keine Zehn-Stunden-Schichten,
+            kein Akkorddruck und auch kein „Eigentlich müssten Sie schon weiter
+            sein" — sondern echtes Handwerk in einem gesunden Rhythmus.
           </p>
         </motion.div>
 
@@ -162,8 +162,8 @@ export default function DeinTagEditorial() {
         {/* Footer-Hinweis */}
         <div className="mt-20 text-center">
           <p className="font-display text-2xl font-semibold sm:text-3xl">
-            Klingt nicht nach Handwerk?{' '}
-            <span className="text-copper">Ist aber unser Alltag.</span>
+            Klingt das nicht nach einem klassischen Handwerksberuf?{' '}
+            <span className="text-copper">Bei uns ist es Alltag.</span>
           </p>
         </div>
       </div>

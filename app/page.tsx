@@ -16,7 +16,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Finder GmbH | Sanitär, Heizung und Bad in Berlin',
   description:
-    'Familienbetrieb für Sanitär, Heizung, Bad und Notdienst in Berlin Prenzlauer Berg. 15+ Jahre Erfahrung, 2.500+ Aufträge im Jahr, eigenes Team. Jetzt Termin anfragen.',
+    'Familienbetrieb für Sanitär, Heizung, Bad und Notdienst in Berlin Prenzlauer Berg. Seit 2010, über 2.500 Aufträge im Jahr, eigenes Team. Vereinbaren Sie jetzt Ihren Termin.',
 };
 
 export default function LandingPage() {

@@ -13,11 +13,11 @@ const steps = [
     nr: '01',
     icon: Phone,
     zeit: 'Tag 0',
-    title: 'Du rufst an oder schreibst.',
-    desc: 'Werktags 8 bis 14 Uhr persönlich am Telefon, kein Callcenter. Außerhalb per E-Mail oder über das Formular auf der Seite.',
+    title: 'Sie melden sich bei uns.',
+    desc: 'Werktags zwischen 8 und 14 Uhr erreichen Sie uns persönlich am Telefon — kein Callcenter, keine Warteschleife. Außerhalb dieser Zeiten freuen wir uns über Ihre Nachricht per E-Mail oder über unser Formular.',
     details: [
-      'Persönliches Erstgespräch in 5 Minuten',
-      'Keine Warteschleife, keine 3 Weiterverbindungen',
+      'Persönliches Erstgespräch in wenigen Minuten',
+      'Keine Warteschleifen, keine Weiterleitungen',
       'Antwort spätestens am nächsten Werktag',
     ],
   },
@@ -25,36 +25,36 @@ const steps = [
     nr: '02',
     icon: ClipboardList,
     zeit: 'Innerhalb 5 Tagen',
-    title: 'Wir kommen vorbei.',
-    desc: 'Vor-Ort-Termin innerhalb von 5 Werktagen. Wir messen, fotografieren, hören zu und sagen ehrlich, was wir empfehlen würden.',
+    title: 'Wir besuchen Sie vor Ort.',
+    desc: 'Innerhalb von fünf Werktagen vereinbaren wir einen Termin bei Ihnen. Wir nehmen uns Zeit, hören aufmerksam zu, vermessen und dokumentieren — und sagen Ihnen ehrlich, was wir empfehlen würden.',
     details: [
       'Kostenlos und unverbindlich',
-      'Wir nehmen uns Zeit für deine Fragen',
-      'Sofort-Einschätzung von Aufwand und Budget',
+      'Wir nehmen uns Zeit für Ihre Fragen',
+      'Erste Einschätzung von Aufwand und Budget direkt vor Ort',
     ],
   },
   {
     nr: '03',
     icon: FileText,
     zeit: 'Wenige Tage später',
-    title: 'Du bekommst ein Festpreis-Angebot.',
-    desc: 'Schriftlich, transparent, ohne Sternchentext. Position für Position aufgeschlüsselt. Gilt 30 Tage, du entscheidest in Ruhe.',
+    title: 'Sie erhalten ein Festpreis-Angebot.',
+    desc: 'Wenige Tage nach dem Termin liegt Ihr Angebot vor — schriftlich, transparent und Position für Position nachvollziehbar. Es gilt 30 Tage und Sie entscheiden in Ruhe, ohne jeden Verkaufsdruck.',
     details: [
       'Festpreis pro Position, keine Stundensätze',
-      'Alle Materialien einzeln aufgelistet',
-      'Bei Änderungen sprechen wir vorher mit dir',
+      'Alle Materialien einzeln aufgeschlüsselt',
+      'Bei Änderungen sprechen wir immer vorher mit Ihnen',
     ],
   },
   {
     nr: '04',
     icon: Wrench,
-    zeit: 'Nach deiner Freigabe',
-    title: 'Wir setzen es um.',
-    desc: 'Eigenes Team von der Anfahrt bis zur Endreinigung. Kein Subunternehmer-Roulette. Termin und Bauzeit halten wir, sonst sagen wir es vorher.',
+    zeit: 'Nach Ihrer Freigabe',
+    title: 'Wir setzen Ihr Projekt um.',
+    desc: 'Mit Ihrer Freigabe legen wir los — vom ersten Anfahren bis zur Endreinigung mit unserem eigenen Team. Wir halten Termin und Bauzeit verlässlich ein. Sollte sich doch etwas verschieben, erfahren Sie es zuerst von uns.',
     details: [
       'Eigene Monteure mit Meisterabschluss',
-      'Saubere Baustelle, am Ende durchgekehrt',
-      '2 Jahre Gewährleistung auf alle Arbeiten',
+      'Saubere Baustelle, am Ende fegen wir durch',
+      'Zwei Jahre Gewährleistung auf alle Arbeiten',
     ],
   },
 ];
@@ -139,15 +139,16 @@ export default function Prozess() {
           <div className="lg:col-span-7">
             <span className="eyebrow">So arbeiten wir</span>
             <h2 className="editorial-h2 mt-5 text-coal">
-              Vier Schritte.
+              Vier ehrliche Schritte —
               <br />
-              <span className="text-copper">Kein Kleingedrucktes.</span>
+              <span className="text-copper">ganz ohne Kleingedrucktes.</span>
             </h2>
           </div>
           <div className="lg:col-span-5">
             <p className="text-lg leading-relaxed text-coal/70">
-              Wir wissen, dass ein Handwerker-Termin Nerven kosten kann. Hier
-              ist genau, was passiert, wenn du uns anrufst. Keine Überraschungen.
+              Wir wissen, dass die Suche nach einem Handwerker Nerven kosten
+              kann. Deshalb zeigen wir Ihnen genau, was passiert, sobald Sie sich
+              bei uns melden. Versprochen: keine Überraschungen.
             </p>
           </div>
         </div>
@@ -240,10 +241,11 @@ export default function Prozess() {
         {/* Closing CTA */}
         <div className="mt-20 flex flex-col items-center text-center">
           <p className="font-display text-2xl font-semibold text-coal sm:text-3xl">
-            Das war es. <span className="text-copper">Vier Schritte.</span>
+            Mehr braucht es nicht.{' '}
+            <span className="text-copper">Vier Schritte zu Ihrem Projekt.</span>
           </p>
           <a href="#kontakt" className="btn-primary mt-6">
-            Schritt 1 starten <ArrowRight size={18} />
+            Jetzt mit Schritt 1 beginnen <ArrowRight size={18} />
           </a>
         </div>
       </div>

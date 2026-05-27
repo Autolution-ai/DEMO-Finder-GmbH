@@ -94,8 +94,10 @@ export default function KarriereHero() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="mt-6 max-w-xl text-xl leading-relaxed text-white/80"
               >
-                Übertariflich. Eigener Firmenwagen. Antwort in 24 Stunden.
-                Bewirb dich in 3 Minuten — ohne Anschreiben, ohne PDF.
+                Bei uns erwartet Sie übertarifliche Bezahlung, ein eigener
+                Firmenwagen und eine persönliche Antwort innerhalb von 24
+                Stunden. Bewerben Sie sich in drei Minuten — ganz ohne
+                Anschreiben oder PDF.
               </motion.p>
 
               <motion.div
@@ -105,7 +107,7 @@ export default function KarriereHero() {
                 className="mt-10 flex flex-wrap items-center gap-3"
               >
                 <a href="#bewerben" className="btn-primary text-base">
-                  In 3 Minuten bewerben <ArrowRight size={18} />
+                  Jetzt in 3 Minuten bewerben <ArrowRight size={18} />
                 </a>
                 <a href="#stellen" className="btn-light">
                   Offene Stellen ansehen
@@ -147,9 +149,9 @@ export default function KarriereHero() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="flex items-center justify-between text-xs uppercase tracking-widest text-white/40"
           >
-            <span className="hidden sm:block">Bewerbung in 3 Minuten</span>
+            <span className="hidden sm:block">Ihre Bewerbung in drei Minuten</span>
             <a href="/" className="hover:text-white">
-              ← Zur Hauptseite
+              ← Zurück zur Hauptseite
             </a>
           </motion.div>
         </div>

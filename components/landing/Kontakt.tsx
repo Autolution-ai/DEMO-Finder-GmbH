@@ -34,13 +34,14 @@ export default function Kontakt() {
         >
           <span className="eyebrow">Kontakt</span>
           <h2 className="editorial-h2 mt-5 text-coal">
-            Schreib uns.
+            Schreiben Sie uns —
             <br />
-            <span className="text-copper">Wir melden uns.</span>
+            <span className="text-copper">wir freuen uns auf Sie.</span>
           </h2>
           <p className="mt-6 max-w-prose text-coal/70">
-            Persönlich am Telefon Mo–Fr von 8 bis 14 Uhr. Außerhalb dieser
-            Zeiten nutzen wir das Formular und melden uns am nächsten Werktag.
+            Montag bis Freitag zwischen 8 und 14 Uhr erreichen Sie uns
+            persönlich am Telefon. Außerhalb dieser Zeiten nutzen Sie gerne
+            unser Formular — wir melden uns spätestens am nächsten Werktag.
           </p>
 
           <div className="mt-10 space-y-5">
@@ -86,10 +87,10 @@ export default function Kontakt() {
                     <Check size={28} strokeWidth={3} />
                   </div>
                   <h3 className="mt-6 font-display text-2xl font-bold">
-                    Danke. Wir sind dran.
+                    Vielen Dank. Wir sind für Sie da.
                   </h3>
                   <p className="mt-3 text-white/70">
-                    Du hörst innerhalb von 24 Stunden von uns – persönlich.
+                    Sie hören innerhalb von 24 Stunden persönlich von uns.
                   </p>
                 </div>
               </div>
@@ -97,14 +98,14 @@ export default function Kontakt() {
               <form onSubmit={submit} className="grid gap-4">
                 <div className="grid gap-4 sm:grid-cols-2">
                   <Field
-                    label="Dein Name"
+                    label="Ihr Name"
                     type="text"
                     value={data.name}
                     onChange={(v) => setData({ ...data, name: v })}
                     required
                   />
                   <Field
-                    label="Telefon"
+                    label="Telefonnummer"
                     type="tel"
                     value={data.tel}
                     onChange={(v) => setData({ ...data, tel: v })}
@@ -112,7 +113,7 @@ export default function Kontakt() {
                   />
                 </div>
                 <Field
-                  label="E-Mail"
+                  label="E-Mail-Adresse"
                   type="email"
                   value={data.email}
                   onChange={(v) => setData({ ...data, email: v })}
@@ -148,7 +149,7 @@ export default function Kontakt() {
                     value={data.text}
                     onChange={(e) => setData({ ...data, text: e.target.value })}
                     rows={4}
-                    placeholder="Kurz dein Anliegen – wir kümmern uns."
+                    placeholder="Beschreiben Sie kurz Ihr Anliegen — wir melden uns persönlich."
                     className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 text-base text-white placeholder-white/40 outline-none transition focus:border-copper"
                   />
                 </div>
@@ -166,7 +167,7 @@ export default function Kontakt() {
                     <a href="/datenschutz" className="underline hover:text-white">
                       Datenschutzerklärung
                     </a>{' '}
-                    gelesen und stimme zu.
+                    gelesen und stimme der Verarbeitung meiner Daten zu.
                   </span>
                 </label>
 

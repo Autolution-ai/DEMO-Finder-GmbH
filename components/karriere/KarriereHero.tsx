@@ -94,10 +94,10 @@ export default function KarriereHero() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="mt-6 max-w-xl text-xl leading-relaxed text-white/80"
               >
-                Bei uns erwartet Sie übertarifliche Bezahlung, ein eigener
-                Firmenwagen und eine persönliche Antwort innerhalb von 24
-                Stunden. Bewerben Sie sich in drei Minuten — ganz ohne
-                Anschreiben oder PDF.
+                Bei uns bekommen Sie eine Bezahlung deutlich über Tarif, einen
+                eigenen Firmenwagen und eine persönliche Antwort innerhalb von
+                24 Stunden. Bewerben Sie sich in drei Minuten. Ohne Anschreiben,
+                ohne PDF.
               </motion.p>
 
               <motion.div

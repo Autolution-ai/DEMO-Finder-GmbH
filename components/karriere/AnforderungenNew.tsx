@@ -7,7 +7,7 @@ const ja = [
   { icon: Briefcase, label: 'Abgeschlossene Ausbildung als Anlagenmechaniker SHK oder vergleichbar' },
   { icon: IdCard, label: 'Führerschein der Klasse B' },
   { icon: MessageSquare, label: 'Gute Deutschkenntnisse (B2) oder gutes Englisch' },
-  { icon: Heart, label: 'Freude am Kundenkontakt — keine Baustellen-Mentalität' },
+  { icon: Heart, label: 'Freude am Kundenkontakt, keine Baustellen-Mentalität' },
 ];
 
 const nein = [

@@ -16,14 +16,14 @@ const display = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Anlagenmechaniker Job Berlin – Kundendienst statt Baustelle | Finder GmbH',
+  title: 'Anlagenmechaniker Job Berlin: Kundendienst statt Baustelle | Finder GmbH',
   description:
-    'Anlagenmechaniker SHK in Berlin gesucht. Bei Finder GmbH erwartet Sie Kundendienst statt Baustelle, ein eigener Firmenwagen und übertarifliche Bezahlung. Bewerben Sie sich in 3 Minuten — Antwort in 24h.',
+    'Anlagenmechaniker SHK in Berlin gesucht. Bei Finder GmbH erwartet Sie Kundendienst statt Baustelle, ein eigener Firmenwagen und übertarifliche Bezahlung. Bewerben Sie sich in 3 Minuten. Antwort in 24 Stunden.',
   metadataBase: new URL('https://karriere.finder-gmbh.info'),
   openGraph: {
-    title: 'Anlagenmechaniker SHK Berlin – Kundendienst statt Baustelle',
+    title: 'Anlagenmechaniker SHK Berlin: Kundendienst statt Baustelle',
     description:
-      'Übertarifliche Bezahlung, eigener Firmenwagen und pünktlicher Feierabend. Bewerben Sie sich in 3 Minuten — ganz ohne Anschreiben oder PDF.',
+      'Übertarifliche Bezahlung, eigener Firmenwagen und pünktlicher Feierabend. Bewerben Sie sich in 3 Minuten. Ohne Anschreiben, ohne PDF.',
     type: 'website',
     locale: 'de_DE',
     siteName: 'Finder GmbH Karriere',

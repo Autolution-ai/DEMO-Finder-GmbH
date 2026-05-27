@@ -27,7 +27,7 @@ const werte = [
   {
     icon: Handshake,
     titel: 'Ehrliche Beratung',
-    text: 'Gute Beratung beginnt nicht beim Verkauf, sondern beim Zuhören. Wir nehmen uns Zeit, schauen uns Ihre Anlage genau an und empfehlen das, was wirklich zu Ihnen passt — auch wenn es das günstigere Angebot ist.',
+    text: 'Gute Beratung fängt nicht beim Verkauf an, sondern beim Zuhören. Wir nehmen uns Zeit, schauen Ihre Anlage in Ruhe an und empfehlen, was für Sie passt. Auch wenn das die günstigere Lösung ist.',
   },
   {
     icon: Award,

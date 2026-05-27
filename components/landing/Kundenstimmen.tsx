@@ -11,7 +11,7 @@ const reviews = [
     name: 'M. Wagner',
     ort: 'Nachbarschaft Greifswalder Str.',
     sterne: 5,
-    text: 'Alles wunderbar gelaufen. Zum Preis kann ich nichts vergleichen — die Dame am Telefon war die erste in der Nachbarschaft, die überhaupt ans Telefon gegangen ist.',
+    text: 'Alles wunderbar gelaufen. Zum Preis kann ich nichts vergleichen. Die Dame am Telefon war die erste in der Nachbarschaft, die überhaupt ans Telefon gegangen ist.',
     leistung: 'Sanitär',
   },
   {
@@ -39,7 +39,7 @@ const reviews = [
     name: 'B. Schmitt',
     ort: 'Prenzlauer Berg',
     sterne: 5,
-    text: 'Bad­sanierung in 4 Wochen, wie versprochen. Eigenes Team von der Baustelle bis zur Endreinigung. Bin nicht leicht zu beeindrucken — hier passt es.',
+    text: 'Bad­sanierung in 4 Wochen, wie versprochen. Eigenes Team von der Baustelle bis zur Endreinigung. Bin nicht leicht zu beeindrucken, hier hat es gepasst.',
     leistung: 'Badsanierung',
   },
   {

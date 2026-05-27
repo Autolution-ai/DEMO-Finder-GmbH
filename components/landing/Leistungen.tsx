@@ -16,7 +16,7 @@ const services = [
     icon: Flame,
     titel: 'Heizung',
     sub: 'Wärmepumpe · Brennwert · Hybrid',
-    text: 'Ob neue Wärmepumpe, klassische Brennwerttherme oder die richtige Lösung für ein Mehrfamilienhaus — wir begleiten Sie von der ersten Beratung über die Planung bis zur Inbetriebnahme. Förderanträge bei BAFA und KfW übernehmen wir vollständig.',
+    text: 'Ob neue Wärmepumpe, klassische Brennwerttherme oder die passende Lösung für ein Mehrfamilienhaus: wir begleiten Sie von der ersten Beratung bis zur Inbetriebnahme. Förderanträge bei BAFA und KfW machen wir für Sie mit.',
     img: IMG.service.heizung,
   },
   {
@@ -31,8 +31,8 @@ const services = [
     nr: '03',
     icon: Droplets,
     titel: 'Sanitär',
-    sub: 'Installation · Tausch · Reparatur',
-    text: 'Vom tropfenden Wasserhahn bis zur kompletten Steigleitungs-Sanierung sind wir Ihre Adresse. Wir arbeiten sauber, gründlich und hinterlassen die Baustelle so, wie wir sie selbst vorfinden möchten.',
+    sub: 'Installation, Tausch, Reparatur',
+    text: 'Vom tropfenden Wasserhahn bis zur kompletten Steigleitungs-Sanierung sind wir Ihre Adresse. Wir arbeiten sauber, gründlich und hinterlassen Ihre Wohnung so, wie wir sie selbst vorfinden möchten.',
     img: IMG.service.sanitaer,
   },
   {
@@ -40,15 +40,15 @@ const services = [
     icon: Wrench,
     titel: 'Wartung',
     sub: 'Jährlich · Mit Protokoll',
-    text: 'Eine jährliche Wartung Ihrer Heizung verlängert die Lebensdauer und spart spürbar Energie. Wir warten Brennwertanlagen, Wärmepumpen, Gas- und Ölheizungen — auf Wunsch erinnern wir Sie automatisch an den nächsten Termin.',
+    text: 'Eine jährliche Wartung verlängert die Lebensdauer Ihrer Heizung und spart spürbar Energie. Wir warten Brennwertanlagen, Wärmepumpen, Gas- und Ölheizungen. Auf Wunsch erinnern wir Sie automatisch an den nächsten Termin.',
     img: IMG.service.wartung,
   },
   {
     nr: '05',
     icon: Siren,
     titel: 'Notdienst',
-    sub: 'Werktags · Vor Ort in 4 – 6 Stunden',
-    text: 'Wasserrohrbruch, kalte Heizung, defekte Therme — werktags zwischen 8 und 14 Uhr sind wir persönlich am Telefon und meistens innerhalb weniger Stunden bei Ihnen. Keine versteckten Notdienst-Aufschläge.',
+    sub: 'Werktags · Vor Ort in 4 bis 6 Stunden',
+    text: 'Wasserrohrbruch, kalte Heizung, defekte Therme: werktags zwischen 8 und 14 Uhr sind wir persönlich am Telefon und meistens innerhalb weniger Stunden bei Ihnen. Keine versteckten Notdienst-Aufschläge.',
     img: IMG.service.notdienst,
   },
   {
@@ -56,7 +56,7 @@ const services = [
     icon: Wind,
     titel: 'Klima & Lüftung',
     sub: 'Wohnen · Büro · Praxis',
-    text: 'Angenehme Temperaturen in Wohnung, Büro oder Praxis — auch im Berliner Altbau. Wir planen Split-Klima-Anlagen und kontrollierte Lüftungen mit dezenter Leitungsführung, die sich harmonisch in den Raum einfügt.',
+    text: 'Angenehme Temperaturen in Wohnung, Büro oder Praxis. Auch im Berliner Altbau möglich. Wir planen Split-Klima-Anlagen und kontrollierte Lüftungen mit dezenter Leitungsführung, die sich harmonisch in den Raum einfügt.',
     img: IMG.service.klima,
   },
 ];
@@ -102,7 +102,7 @@ export default function Leistungen() {
           </div>
           <div className="lg:col-span-5">
             <p className="text-lg leading-relaxed text-coal/70">
-              Heizung, Bad, Sanitär, Wartung, Notdienst und Klima — alles aus
+              Heizung, Bad, Sanitär, Wartung, Notdienst und Klima. Alles aus
               einer Hand und mit eigenem Team. Was nicht zu unseren Stärken
               gehört, sagen wir Ihnen ehrlich.
             </p>

@@ -54,8 +54,8 @@ export default function FunnelNew() {
             <span className="text-copper">Ohne Anschreiben. Ohne PDF.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/70">
-            Vier kurze Fragen, Ihre Handynummer — mehr brauchen wir nicht. Sie
-            hören innerhalb von 24 Stunden persönlich von uns. Versprochen.
+            Vier kurze Fragen und Ihre Handynummer. Mehr brauchen wir nicht.
+            Sie hören innerhalb von 24 Stunden persönlich von uns. Versprochen.
           </p>
         </motion.div>
 
@@ -337,7 +337,7 @@ function Erfolg({ name }: { name?: string }) {
         Vielen Dank{name ? `, Herr/Frau ${name.split(' ').slice(-1)[0]}` : ''}.
       </h3>
       <p className="mx-auto mt-4 max-w-md text-lg leading-relaxed text-coal/70">
-        Wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen — nicht per
+        Wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen. Nicht per
         Massenmail, sondern direkt von Thomas, Dietmar oder Jörg.
       </p>
     </motion.div>

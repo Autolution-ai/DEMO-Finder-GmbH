@@ -23,21 +23,21 @@ const tag = [
     zeit: '08:00',
     icon: Coffee,
     titel: 'Erste Adresse',
-    text: 'Ein Kundendienst-Termin steht an. Die Heizung läuft nicht rund — Sie hören zu, stellen die Diagnose und lösen das Problem. Sauber, ruhig, kompetent.',
+    text: 'Ein Kundendienst-Termin steht an. Die Heizung läuft nicht rund. Sie hören zu, stellen die Diagnose, lösen das Problem. Sauber, ruhig, kompetent.',
     img: IMG.hero.caddyStreet,
   },
   {
     zeit: '12:00',
     icon: Soup,
     titel: 'Mittagspause',
-    text: 'Eine ganze Stunde Pause — und Sie entscheiden, wo Sie diese verbringen möchten. Nicht eingequetscht zwischen Werkbänken in einer Kantine.',
+    text: 'Eine ganze Stunde Pause. Wo Sie die verbringen, entscheiden Sie. Nicht eingequetscht zwischen Werkbänken in einer Kantine.',
     img: IMG.hero.livingRoom,
   },
   {
     zeit: '14:00',
     icon: Wrench,
     titel: 'Wartung der Brennwerttherme',
-    text: 'Eine geplante Jahresinspektion steht auf dem Programm — Routine, kein Zeitdruck. Sie arbeiten gründlich und dokumentieren alles im Protokoll.',
+    text: 'Eine geplante Jahresinspektion steht auf dem Programm. Routine, kein Zeitdruck. Sie arbeiten gründlich und dokumentieren alles im Protokoll.',
     img: IMG.service.wartung,
   },
   {
@@ -51,7 +51,7 @@ const tag = [
     zeit: '17:00',
     icon: Home,
     titel: 'Pünktlicher Feierabend',
-    text: 'Punkt fünf Uhr ist Feierabend. Wirklich. Ohne „nur noch schnell"-Anrufe — Ihr Abend gehört wieder ganz Ihnen und Ihrer Familie.',
+    text: 'Punkt fünf Uhr ist Feierabend. Wirklich. Ohne „nur noch schnell"-Anrufe. Ihr Abend gehört wieder Ihnen und Ihrer Familie.',
     img: IMG.hero.livingRoom,
   },
 ];
@@ -106,8 +106,8 @@ export default function DeinTagEditorial() {
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/70">
             So sieht ein typischer Werktag bei uns aus. Keine Zehn-Stunden-Schichten,
-            kein Akkorddruck und auch kein „Eigentlich müssten Sie schon weiter
-            sein" — sondern echtes Handwerk in einem gesunden Rhythmus.
+            kein Akkorddruck und kein „Eigentlich müssten Sie schon weiter sein".
+            Stattdessen Handwerk in einem gesunden Rhythmus.
           </p>
         </motion.div>
 

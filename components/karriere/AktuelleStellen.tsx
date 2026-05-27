@@ -12,7 +12,7 @@ const stellen = [
     typ: 'Vollzeit · Festanstellung',
     ort: 'Berlin Prenzlauer Berg',
     gehalt: 'bis 4.600 € brutto',
-    kurz: 'Sie fahren von Kunde zu Kunde, warten Heizungsanlagen, beheben Störungen und installieren Thermen oder Wärmepumpen. Bei uns erwartet Sie kein Akkord und kein Rohbau — sondern echter Handwerksstolz.',
+    kurz: 'Sie fahren von Kunde zu Kunde, warten Heizungsanlagen, beheben Störungen und installieren Thermen oder Wärmepumpen. Kein Akkord, kein Rohbau. Sondern Handwerk, auf das man stolz sein kann.',
     punkte: [
       'Abgeschlossene Ausbildung als Anlagenmechaniker SHK oder vergleichbar',
       'Führerschein der Klasse B',
@@ -44,7 +44,7 @@ const stellen = [
     typ: '3,5 Jahre · Start jährlich im August',
     ort: 'Berlin Prenzlauer Berg',
     gehalt: 'bis 1.200 € im 3. Lehrjahr',
-    kurz: 'Bei uns lernen Sie alles, was den Beruf ausmacht: Heizungsbau, Sanitärinstallation, Wartung und Kundendienst. Schon ab der ersten Woche übernehmen Sie echte Aufgaben — und halten nicht nur das Werkzeug.',
+    kurz: 'Bei uns lernen Sie alles, was den Beruf ausmacht: Heizungsbau, Sanitärinstallation, Wartung und Kundendienst. Schon ab der ersten Woche packen Sie richtig mit an. Werkzeug halten und zuschauen war gestern.',
     punkte: [
       'Guter Hauptschulabschluss oder besser',
       'Begeisterung für Handwerk und Lust auf Verantwortung',

@@ -34,7 +34,7 @@ export default function JsonLd() {
       },
       {
         '@type': 'JobPosting',
-        title: 'Anlagenmechaniker SHK (m/w/d) – Kundendienst',
+        title: 'Anlagenmechaniker SHK Kundendienst (m/w/d)',
         description:
           'Anlagenmechaniker SHK im Kundendienst, nicht auf der Baustelle. Übertariflich, eigener Firmenwagen, betriebliche Altersvorsorge, planbare Arbeitszeiten.',
         datePosted: new Date().toISOString().split('T')[0],

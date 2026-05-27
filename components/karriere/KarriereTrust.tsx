@@ -37,7 +37,7 @@ const stats: Stat[] = [
     icon: ShieldCheck,
     value: 0,
     suffix: '',
-    label: 'Akkord — nie wieder',
+    label: 'Akkord. Nie wieder.',
   },
 ];
 

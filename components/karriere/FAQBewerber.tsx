@@ -7,19 +7,19 @@ import { Plus, Minus } from 'lucide-react';
 const items = [
   {
     q: 'Wie lange dauert die Probezeit?',
-    a: 'Bei uns gilt die übliche Probezeit von sechs Monaten. Allerdings haben wir die letzten zehn Einstellungen ausnahmslos übernommen — wir stellen niemanden ein, um uns später wieder zu trennen.',
+    a: 'Bei uns gilt die übliche Probezeit von sechs Monaten. Aber: Die letzten zehn Einstellungen haben wir alle übernommen. Wir stellen niemanden ein, um uns später wieder zu trennen.',
   },
   {
     q: 'Bekomme ich den Firmenwagen auch privat?',
-    a: 'Selbstverständlich, sofern Sie das möchten. Wir regeln das ganz pragmatisch mit Ihnen — kein kompliziertes 1-Prozent-Theater. Die Tankkarte erhalten Sie ohnehin.',
+    a: 'Ja, wenn Sie das möchten. Wir regeln das ganz pragmatisch mit Ihnen, ohne kompliziertes 1-Prozent-Theater. Die Tankkarte bekommen Sie ohnehin.',
   },
   {
     q: 'Wie sieht die Einarbeitung aus?',
-    a: 'In den ersten zwei Wochen begleiten Sie einen erfahrenen Kollegen auf seinen Touren. Danach übernehmen Sie eine eigene Tour — bei Rückfragen ist jederzeit jemand für Sie am Telefon erreichbar. Wir werfen niemanden ins kalte Wasser.',
+    a: 'In den ersten zwei Wochen begleiten Sie einen erfahrenen Kollegen auf seinen Touren. Danach übernehmen Sie eine eigene Tour. Bei Rückfragen ist jederzeit jemand für Sie am Telefon. Wir werfen niemanden ins kalte Wasser.',
   },
   {
     q: 'Wie sehen die Arbeitszeiten tatsächlich aus?',
-    a: 'Sie arbeiten von Montag bis Freitag zwischen 7 und 17 Uhr. Notdienst übernehmen Sie nur freiwillig und werden dafür extra vergütet. Die Wochenenden gehören Ihnen — versprochen.',
+    a: 'Sie arbeiten von Montag bis Freitag zwischen 7 und 17 Uhr. Notdienst übernehmen Sie nur freiwillig und werden dafür extra vergütet. Die Wochenenden gehören Ihnen. Versprochen.',
   },
   {
     q: 'Was, wenn ich Quereinsteiger bin?',
@@ -53,9 +53,9 @@ export default function FAQBewerber() {
             <span className="text-copper">wirklich wissen möchten.</span>
           </h2>
           <p className="mt-6 max-w-prose text-coal/70">
-            Sollte Ihre Frage hier nicht dabei sein: Schreiben Sie sie gern in
-            das Bewerbungsformular hinein oder rufen Sie uns an. Wir antworten
-            ehrlich — auch wenn die Antwort einmal „Nein" lauten sollte.
+            Sollte Ihre Frage hier nicht dabei sein, schreiben Sie sie gern in
+            das Bewerbungsformular oder rufen Sie uns an. Wir antworten ehrlich.
+            Auch wenn die Antwort einmal „Nein" lauten sollte.
           </p>
 
           <div className="mt-8 rounded-2xl border border-coal/10 bg-white p-6">
@@ -64,7 +64,7 @@ export default function FAQBewerber() {
             </div>
             <p className="mt-2 text-sm leading-relaxed text-coal/65">
               Jede Bewerbung wird innerhalb von 24 Stunden persönlich
-              beantwortet — auch eine Absage. Keine Funkstille, keine
+              beantwortet. Auch eine Absage. Keine Funkstille, keine
               automatischen Massenmails.
             </p>
           </div>

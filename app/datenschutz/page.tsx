@@ -40,8 +40,8 @@ export default function DatenschutzPage() {
               Diese Daten verwenden wir ausschließlich zur Bearbeitung Ihrer
               Bewerbung und zur Kontaktaufnahme. Eine Weitergabe an Dritte
               erfolgt nicht. Nach Abschluss des Bewerbungsverfahrens werden
-              die Daten spätestens nach 6 Monaten gelöscht — sofern Sie einer
-              längeren Speicherung nicht ausdrücklich zustimmen.
+              die Daten spätestens nach 6 Monaten gelöscht. Eine längere
+              Speicherung erfolgt nur, wenn Sie ausdrücklich zustimmen.
             </p>
           </Section>
 
@@ -81,8 +81,8 @@ export default function DatenschutzPage() {
             </p>
             <p className="mt-3">
               Sie haben außerdem das Recht, sich bei einer
-              Datenschutz-Aufsichtsbehörde zu beschweren — in Berlin: Berliner
-              Beauftragte für Datenschutz und Informationsfreiheit.
+              Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig in Berlin
+              ist die Berliner Beauftragte für Datenschutz und Informationsfreiheit.
             </p>
           </Section>
 

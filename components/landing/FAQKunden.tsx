@@ -11,11 +11,11 @@ const items = [
   },
   {
     q: 'Was kostet eine neue Heizung im Durchschnitt?',
-    a: 'Für eine moderne Gas-Brennwertanlage im Berliner Bestand liegen Sie bei 8.000 bis 14.000 €. Eine Wärmepumpe schlägt je nach Gebäude mit 22.000 bis 38.000 € zu Buche. Den genauen Preis erhalten Sie nach unserem Vor-Ort-Termin — schriftlich und ohne versteckte Kosten.',
+    a: 'Für eine moderne Gas-Brennwertanlage im Berliner Bestand liegen Sie zwischen 8.000 und 14.000 €. Eine Wärmepumpe schlägt je nach Gebäude mit 22.000 bis 38.000 € zu Buche. Den genauen Preis bekommen Sie nach unserem Vor-Ort-Termin schriftlich. Ohne versteckte Kosten.',
   },
   {
     q: 'Übernehmen Sie auch die Förderanträge?',
-    a: 'Selbstverständlich. Wir kennen die aktuellen Programme von BAFA, KfW und IBB im Detail, bereiten alle Unterlagen für Sie vor und reichen sie gemeinsam mit Ihnen ein. Dafür berechnen wir keinen Aufpreis.',
+    a: 'Ja, das machen wir gerne für Sie. Wir kennen die aktuellen Programme von BAFA, KfW und IBB, bereiten alle Unterlagen vor und reichen sie gemeinsam mit Ihnen ein. Ohne Aufpreis.',
   },
   {
     q: 'Wie lange dauert eine Badsanierung?',
@@ -27,7 +27,7 @@ const items = [
   },
   {
     q: 'Erhalte ich ein verbindliches Angebot?',
-    a: 'Ja — schriftlich, mit Festpreis pro Position und 30 Tage gültig. Sollte sich während der Arbeit unerwartet etwas ändern, sprechen wir vorher mit Ihnen, bevor sich der Preis bewegt.',
+    a: 'Ja. Schriftlich, mit Festpreis pro Position und 30 Tage gültig. Sollte sich während der Arbeit unerwartet etwas ändern, sprechen wir vorher mit Ihnen, bevor sich der Preis bewegt.',
   },
 ];
 

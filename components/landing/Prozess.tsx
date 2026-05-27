@@ -14,7 +14,7 @@ const steps = [
     icon: Phone,
     zeit: 'Tag 0',
     title: 'Sie melden sich bei uns.',
-    desc: 'Werktags zwischen 8 und 14 Uhr erreichen Sie uns persönlich am Telefon — kein Callcenter, keine Warteschleife. Außerhalb dieser Zeiten freuen wir uns über Ihre Nachricht per E-Mail oder über unser Formular.',
+    desc: 'Werktags zwischen 8 und 14 Uhr erreichen Sie uns persönlich am Telefon. Kein Callcenter, keine Warteschleife. Außerhalb dieser Zeiten freuen wir uns über Ihre Nachricht per E-Mail oder über das Formular auf dieser Seite.',
     details: [
       'Persönliches Erstgespräch in wenigen Minuten',
       'Keine Warteschleifen, keine Weiterleitungen',
@@ -26,7 +26,7 @@ const steps = [
     icon: ClipboardList,
     zeit: 'Innerhalb 5 Tagen',
     title: 'Wir besuchen Sie vor Ort.',
-    desc: 'Innerhalb von fünf Werktagen vereinbaren wir einen Termin bei Ihnen. Wir nehmen uns Zeit, hören aufmerksam zu, vermessen und dokumentieren — und sagen Ihnen ehrlich, was wir empfehlen würden.',
+    desc: 'Innerhalb von fünf Werktagen vereinbaren wir einen Termin bei Ihnen. Wir nehmen uns Zeit, hören zu, vermessen und dokumentieren. Am Ende sagen wir Ihnen ehrlich, was wir empfehlen würden.',
     details: [
       'Kostenlos und unverbindlich',
       'Wir nehmen uns Zeit für Ihre Fragen',
@@ -38,7 +38,7 @@ const steps = [
     icon: FileText,
     zeit: 'Wenige Tage später',
     title: 'Sie erhalten ein Festpreis-Angebot.',
-    desc: 'Wenige Tage nach dem Termin liegt Ihr Angebot vor — schriftlich, transparent und Position für Position nachvollziehbar. Es gilt 30 Tage und Sie entscheiden in Ruhe, ohne jeden Verkaufsdruck.',
+    desc: 'Wenige Tage nach dem Termin liegt Ihr Angebot vor. Schriftlich, Position für Position aufgeschlüsselt und für 30 Tage gültig. Sie entscheiden in Ruhe, ohne Verkaufsdruck.',
     details: [
       'Festpreis pro Position, keine Stundensätze',
       'Alle Materialien einzeln aufgeschlüsselt',
@@ -50,7 +50,7 @@ const steps = [
     icon: Wrench,
     zeit: 'Nach Ihrer Freigabe',
     title: 'Wir setzen Ihr Projekt um.',
-    desc: 'Mit Ihrer Freigabe legen wir los — vom ersten Anfahren bis zur Endreinigung mit unserem eigenen Team. Wir halten Termin und Bauzeit verlässlich ein. Sollte sich doch etwas verschieben, erfahren Sie es zuerst von uns.',
+    desc: 'Sobald Sie uns Ihre Freigabe geben, legen wir los. Vom ersten Anfahren bis zur Endreinigung arbeiten wir mit unserem eigenen Team. Termin und Bauzeit halten wir ein. Sollte sich doch einmal etwas verschieben, hören Sie das zuerst von uns.',
     details: [
       'Eigene Monteure mit Meisterabschluss',
       'Saubere Baustelle, am Ende fegen wir durch',

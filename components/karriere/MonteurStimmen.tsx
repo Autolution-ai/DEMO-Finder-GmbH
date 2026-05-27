@@ -60,7 +60,7 @@ export default function MonteurStimmen() {
             <span className="text-copper">fragen Sie unser Team.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-coal/70">
-            Hier kommen die zu Wort, die jeden Tag bei uns arbeiten — ungekürzt
+            Hier kommen die zu Wort, die jeden Tag bei uns arbeiten. Ungekürzt
             und ehrlich. Keine Marketing-Phrasen, keine geschönten
             Geschäftsführer-Worte.
           </p>

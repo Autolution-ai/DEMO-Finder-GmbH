@@ -16,7 +16,7 @@ const benefits = [
     icon: Wrench,
     titel: 'Kundendienst statt Baustelle',
     zahl: '90 %',
-    text: 'Bei uns warten Sie Heizungsanlagen, beheben Störungen und beraten Kunden in deren Zuhause. Kein Rohbau, kein Akkord, kein Baustellen-Stress — sondern echtes Handwerk in fertigen Räumen.',
+    text: 'Bei uns warten Sie Heizungsanlagen, beheben Störungen und beraten Kunden in deren Zuhause. Kein Rohbau, kein Akkord, kein Baustellen-Stress. Sondern Handwerk in fertigen Räumen.',
     img: IMG.service.wartung,
   },
   {
@@ -24,7 +24,7 @@ const benefits = [
     icon: Euro,
     titel: 'Übertarifliche Bezahlung',
     zahl: 'bis 4.600 €',
-    text: 'Sie erhalten ein faires Gehalt deutlich über Tarif — plus Zuschläge für Notdienst und Wochenend-Einsätze. Alles transparent im Arbeitsvertrag, ab dem ersten Tag und schriftlich.',
+    text: 'Sie bekommen ein faires Gehalt deutlich über Tarif, dazu Zuschläge für Notdienst und Wochenend-Einsätze. Alles steht im Arbeitsvertrag. Ab dem ersten Tag, schriftlich.',
     img: IMG.service.heizung,
   },
   {
@@ -32,7 +32,7 @@ const benefits = [
     icon: Truck,
     titel: 'Ihr eigener Firmenwagen',
     zahl: '24/7',
-    text: 'Sie bekommen einen VW Caddy oder ein vergleichbares Fahrzeug inklusive Tankkarte — auf Wunsch auch zur privaten Nutzung. Ihr Werkzeug bleibt im Firmenwagen, nicht in Ihrem eigenen Kofferraum.',
+    text: 'Sie bekommen einen VW Caddy oder ein vergleichbares Fahrzeug inklusive Tankkarte. Auf Wunsch auch zur privaten Nutzung. Ihr Werkzeug bleibt im Firmenwagen, nicht in Ihrem eigenen Kofferraum.',
     img: IMG.service.notdienst,
   },
   {
@@ -40,7 +40,7 @@ const benefits = [
     icon: Clock,
     titel: 'Pünktlicher Feierabend',
     zahl: '17:00',
-    text: 'Sie arbeiten von Montag bis Freitag in planbaren Wochen — Ihr Wochenende gehört Ihnen. Notdienst übernehmen Sie nur freiwillig und werden dafür extra vergütet. Keine spontanen „nur schnell noch"-Anrufe.',
+    text: 'Sie arbeiten von Montag bis Freitag in planbaren Wochen. Ihr Wochenende gehört Ihnen. Notdienst übernehmen Sie nur freiwillig und werden dafür extra vergütet. Keine spontanen „nur schnell noch"-Anrufe um 19 Uhr.',
     img: IMG.hero.livingRoom,
   },
   {
@@ -48,7 +48,7 @@ const benefits = [
     icon: PiggyBank,
     titel: 'Betriebliche Altersvorsorge',
     zahl: '+ 150 €',
-    text: 'Wir legen monatlich für Ihre Zukunft drauf, ohne dass Sie etwas von Ihrem Netto abgeben müssen — zusätzlich zu Vermögenswirksamen Leistungen und Weihnachtsgeld.',
+    text: 'Wir legen monatlich für Ihre Zukunft drauf, ohne dass Sie etwas von Ihrem Netto abgeben müssen. Dazu Vermögenswirksame Leistungen und Weihnachtsgeld.',
     img: IMG.hero.workshopDawn,
   },
   {
@@ -56,7 +56,7 @@ const benefits = [
     icon: Hammer,
     titel: 'Top-Werkzeug & Marken-Kleidung',
     zahl: 'Neu',
-    text: 'Sie arbeiten mit Profi-Werkzeug von Hilti, Makita und Knipex sowie hochwertiger Arbeitskleidung von Engelbert Strauss. Wir glauben: Wer mit gutem Werkzeug arbeitet, macht auch gute Arbeit.',
+    text: 'Sie arbeiten mit Profi-Werkzeug von Hilti, Makita und Knipex. Dazu hochwertige Arbeitskleidung von Engelbert Strauss. Wer mit gutem Werkzeug arbeitet, macht auch gute Arbeit.',
     img: IMG.atmosphere.werkstatt,
   },
 ];

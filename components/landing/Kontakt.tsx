@@ -41,7 +41,7 @@ export default function Kontakt() {
           <p className="mt-6 max-w-prose text-coal/70">
             Montag bis Freitag zwischen 8 und 14 Uhr erreichen Sie uns
             persönlich am Telefon. Außerhalb dieser Zeiten nutzen Sie gerne
-            unser Formular — wir melden uns spätestens am nächsten Werktag.
+            unser Formular. Wir melden uns spätestens am nächsten Werktag.
           </p>
 
           <div className="mt-10 space-y-5">
@@ -149,7 +149,7 @@ export default function Kontakt() {
                     value={data.text}
                     onChange={(e) => setData({ ...data, text: e.target.value })}
                     rows={4}
-                    placeholder="Beschreiben Sie kurz Ihr Anliegen — wir melden uns persönlich."
+                    placeholder="Worum geht es? Ein paar Stichworte reichen uns."
                     className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 text-base text-white placeholder-white/40 outline-none transition focus:border-copper"
                   />
                 </div>

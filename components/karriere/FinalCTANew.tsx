@@ -36,8 +36,8 @@ export default function FinalCTANew() {
             leere Versprechen?
           </h2>
           <p className="mx-auto mt-8 max-w-xl text-xl text-white/80">
-            Drei Minuten Zeit, vier Fragen — und Sie hören innerhalb von 24
-            Stunden persönlich von Thomas, Dietmar oder Jörg.
+            Drei Minuten Zeit, vier Fragen. Innerhalb von 24 Stunden hören Sie
+            persönlich von Thomas, Dietmar oder Jörg.
           </p>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4">

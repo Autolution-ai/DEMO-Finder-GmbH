@@ -1,4 +1,4 @@
-import Nav from '@/components/Nav';
+import NavBrand from '@/components/landing/NavBrand';
 import Hero from '@/components/Hero';
 import AktuelleStellen from '@/components/karriere/AktuelleStellen';
 import SchmerzSection from '@/components/SchmerzSection';
@@ -28,7 +28,7 @@ export default function KarrierePage() {
     <>
       <JsonLd />
       <KarriereJsonLd />
-      <Nav />
+      <NavBrand />
       <main>
         <Hero />
         <AktuelleStellen />
